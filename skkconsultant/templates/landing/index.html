@@ -15,7 +15,7 @@ Construction, Civil Engineering &amp; Property Development
     <!-- HERO SLIDER                                                            -->
     <!-- ====================================================================== -->
     <section aria-label="SKK Consultant project highlights" aria-roledescription="carousel" class="hero"
-        data-delay="6500" data-hero="">
+        data-delay="4000" data-hero="">
         <div class="hero__track">
             <div aria-label="1 of 5" aria-roledescription="slide" class="hero__slide is-active" role="group">
                 <img alt="Reinforced concrete frame of a multi-storey building under construction against an overcast sky"
@@ -201,7 +201,7 @@ Construction, Civil Engineering &amp; Property Development
                     <p class="eyebrow">What we do</p>
                     <h2 id="services-heading">Twelve service lines, one accountable team.</h2>
                 </div>
-                <a class="link-arrow" href="services.html">
+                <a class="link-arrow" href="{% url 'landing:services' %}">
                     All services
                     <svg aria-hidden="true" class="icon">
                         <use href="#i-arrow-right"></use>
@@ -211,7 +211,7 @@ Construction, Civil Engineering &amp; Property Development
         </div>
         <div class="wrap">
             <div class="service-grid reveal">
-                <a class="service-card" href="services.html#real-estate">
+                <a class="service-card" href="{% url 'landing:services' %}#real-estate">
                     <img alt="Tower cranes standing over the top floors of a building development at dusk"
                         decoding="async" height="595" loading="lazy"
                         src="https://images.unsplash.com/photo-1429497419816-9ca5cfb4571a?auto=format&amp;fit=crop&amp;w=700&amp;h=595&amp;q=70"
@@ -227,7 +227,7 @@ Construction, Civil Engineering &amp; Property Development
                             </svg></span>
                     </div>
                 </a>
-                <a class="service-card" href="services.html#building">
+                <a class="service-card" href="{% url 'landing:services' %}#building">
                     <img alt="Construction worker in a hard hat walking across the steel frame of a new building"
                         decoding="async" height="595" loading="lazy"
                         src="https://images.unsplash.com/photo-1587582423116-ec07293f0395?auto=format&amp;fit=crop&amp;w=700&amp;h=595&amp;q=70"
@@ -243,7 +243,7 @@ Construction, Civil Engineering &amp; Property Development
                             </svg></span>
                     </div>
                 </a>
-                <a class="service-card" href="services.html#paving">
+                <a class="service-card" href="{% url 'landing:services' %}#paving">
                     <img alt="Excavator working along a concrete roadway during a surfacing operation" decoding="async"
                         height="595" loading="lazy"
                         src="https://images.unsplash.com/photo-1610477865545-37711c53144d?auto=format&amp;fit=crop&amp;w=700&amp;h=595&amp;q=70"
@@ -259,7 +259,7 @@ Construction, Civil Engineering &amp; Property Development
                             </svg></span>
                     </div>
                 </a>
-                <a class="service-card" href="services.html#excavation">
+                <a class="service-card" href="{% url 'landing:services' %}#excavation">
                     <img alt="Yellow tracked excavator digging into rocky ground on a cleared site" decoding="async"
                         height="595" loading="lazy"
                         src="https://images.unsplash.com/photo-1580901369227-308f6f40bdeb?auto=format&amp;fit=crop&amp;w=700&amp;h=595&amp;q=70"
@@ -275,7 +275,7 @@ Construction, Civil Engineering &amp; Property Development
                             </svg></span>
                     </div>
                 </a>
-                <a class="service-card" href="services.html#surveying">
+                <a class="service-card" href="{% url 'landing:services' %}#surveying">
                     <img alt="Two site engineers standing on a new road alignment reviewing the works ahead of them"
                         decoding="async" height="595" loading="lazy"
                         src="https://images.unsplash.com/photo-1693019108329-1889fb170f2e?auto=format&amp;fit=crop&amp;w=700&amp;h=595&amp;q=70"
@@ -291,7 +291,7 @@ Construction, Civil Engineering &amp; Property Development
                             </svg></span>
                     </div>
                 </a>
-                <a class="service-card" href="services.html#soil">
+                <a class="service-card" href="{% url 'landing:services' %}#soil">
                     <img alt="Excavator bucket breaking into exposed brown subsoil during ground investigation works"
                         decoding="async" height="595" loading="lazy"
                         src="https://images.unsplash.com/photo-1622082679766-c5912d9416eb?auto=format&amp;fit=crop&amp;w=700&amp;h=595&amp;q=70"
@@ -307,7 +307,7 @@ Construction, Civil Engineering &amp; Property Development
                             </svg></span>
                     </div>
                 </a>
-                <a class="service-card" href="services.html#civil">
+                <a class="service-card" href="{% url 'landing:services' %}#civil">
                     <img alt="Aerial view of heavy plant loading a dump truck on a civil engineering site"
                         decoding="async" height="595" loading="lazy"
                         src="https://images.unsplash.com/photo-1534097575056-ddba81f714c8?auto=format&amp;fit=crop&amp;w=700&amp;h=595&amp;q=70"
@@ -323,7 +323,7 @@ Construction, Civil Engineering &amp; Property Development
                             </svg></span>
                     </div>
                 </a>
-                <a class="service-card" href="services.html#roads">
+                <a class="service-card" href="{% url 'landing:services' %}#roads">
                     <img alt="Heavy grading machine working along an unfinished road formation" decoding="async"
                         height="595" loading="lazy"
                         src="https://images.unsplash.com/photo-1591486085897-f433f05e7aed?auto=format&amp;fit=crop&amp;w=700&amp;h=595&amp;q=70"
@@ -339,7 +339,7 @@ Construction, Civil Engineering &amp; Property Development
                             </svg></span>
                     </div>
                 </a>
-                <a class="service-card" href="services.html#drainage">
+                <a class="service-card" href="{% url 'landing:services' %}#drainage">
                     <img alt="Excavator loading spoil from an open trench into a waiting dump truck" decoding="async"
                         height="595" loading="lazy"
                         src="https://images.unsplash.com/photo-1575281923032-f40d94ef6160?auto=format&amp;fit=crop&amp;w=700&amp;h=595&amp;q=70"
@@ -355,7 +355,7 @@ Construction, Civil Engineering &amp; Property Development
                             </svg></span>
                     </div>
                 </a>
-                <a class="service-card" href="services.html#structural">
+                <a class="service-card" href="{% url 'landing:services' %}#structural">
                     <img alt="Grey tower crane photographed from below against the frame of a rising building"
                         decoding="async" height="595" loading="lazy"
                         src="https://images.unsplash.com/photo-1535732759880-bbd5c7265e3f?auto=format&amp;fit=crop&amp;w=700&amp;h=595&amp;q=70"
@@ -371,7 +371,7 @@ Construction, Civil Engineering &amp; Property Development
                             </svg></span>
                     </div>
                 </a>
-                <a class="service-card" href="services.html#management">
+                <a class="service-card" href="{% url 'landing:services' %}#management">
                     <img alt="Two construction professionals conferring beside ongoing works on site" decoding="async"
                         height="595" loading="lazy"
                         src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&amp;fit=crop&amp;w=700&amp;h=595&amp;q=70"
@@ -387,7 +387,7 @@ Construction, Civil Engineering &amp; Property Development
                             </svg></span>
                     </div>
                 </a>
-                <a class="service-card" href="services.html#landscaping">
+                <a class="service-card" href="{% url 'landing:services' %}#landscaping">
                     <img alt="Excavator shaping a landscaped embankment on a hillside under a clear sky"
                         decoding="async" height="595" loading="lazy"
                         src="https://images.unsplash.com/photo-1649807479468-40011b31ee09?auto=format&amp;fit=crop&amp;w=700&amp;h=595&amp;q=70"
@@ -499,7 +499,7 @@ Construction, Civil Engineering &amp; Property Development
                     <p class="eyebrow">Selected work</p>
                     <h2 id="featured-heading">Representative projects across our disciplines.</h2>
                 </div>
-                <a class="link-arrow" href="portfolio.html">
+                <a class="link-arrow" href="{% url 'landing:gallery' %}">
                     Full portfolio
                     <svg aria-hidden="true" class="icon">
                         <use href="#i-arrow-right"></use>
@@ -507,7 +507,7 @@ Construction, Civil Engineering &amp; Property Development
                 </a>
             </div>
             <div class="projects reveal">
-                <a class="project project--hero" href="portfolio.html">
+                <a class="project project--hero" href="{% url 'landing:gallery' %}">
                     <img alt="Yellow tower crane lifting materials beside a partly clad multi-storey building"
                         decoding="async" height="900" loading="lazy"
                         src="https://images.unsplash.com/photo-1599707254554-027aeb4deacd?auto=format&amp;fit=crop&amp;w=1100&amp;h=900&amp;q=72"
@@ -522,7 +522,7 @@ Construction, Civil Engineering &amp; Property Development
                             </svg></span>
                     </div>
                 </a>
-                <a class="project project--tall" href="portfolio.html">
+                <a class="project project--tall" href="{% url 'landing:gallery' %}">
                     <img alt="Row of yellow and blue construction machines lined up ready for work on a site compound"
                         decoding="async" height="900" loading="lazy"
                         src="https://images.unsplash.com/photo-1642927778267-4e8b787b325a?auto=format&amp;fit=crop&amp;w=600&amp;h=900&amp;q=72"
@@ -535,7 +535,7 @@ Construction, Civil Engineering &amp; Property Development
                             </svg></span>
                     </div>
                 </a>
-                <a class="project" href="portfolio.html">
+                <a class="project" href="{% url 'landing:gallery' %}">
                     <img alt="Two excavators working a wide cut face on a large earthmoving operation" decoding="async"
                         height="450" loading="lazy"
                         src="https://images.unsplash.com/photo-1523848309072-c199db53f137?auto=format&amp;fit=crop&amp;w=600&amp;h=450&amp;q=72"
@@ -545,7 +545,7 @@ Construction, Civil Engineering &amp; Property Development
                         <h3 class="project__title">Site platform formation</h3>
                     </div>
                 </a>
-                <a class="project project--wide" href="portfolio.html">
+                <a class="project project--wide" href="{% url 'landing:gallery' %}">
                     <img alt="Heavy truck travelling along a wet newly surfaced road between construction barriers"
                         decoding="async" height="450" loading="lazy"
                         src="https://images.unsplash.com/photo-1706712637075-f47fb47548f2?auto=format&amp;fit=crop&amp;w=1100&amp;h=450&amp;q=72"
@@ -558,7 +558,7 @@ Construction, Civil Engineering &amp; Property Development
                             </svg></span>
                     </div>
                 </a>
-                <a class="project" href="portfolio.html">
+                <a class="project" href="{% url 'landing:gallery' %}">
                     <img alt="Crane standing in front of a large building facade in monochrome light" decoding="async"
                         height="450" loading="lazy"
                         src="https://images.unsplash.com/photo-1591955506264-3f5a6834570a?auto=format&amp;fit=crop&amp;w=600&amp;h=450&amp;q=72"
@@ -582,7 +582,7 @@ Construction, Civil Engineering &amp; Property Development
                 <p>Hover or tap any panel to see the discipline it covers.</p>
             </div>
             <div class="mosaic reveal">
-                <a class="mosaic__tile mosaic__tile--w2 mosaic__tile--h2" href="services.html#building">
+                <a class="mosaic__tile mosaic__tile--w2 mosaic__tile--h2" href="{% url 'landing:services' %}#building">
                     <img alt="Several cranes rising above a cluster of buildings under construction in a city"
                         decoding="async" height="800" loading="lazy"
                         src="https://images.unsplash.com/photo-1485083269755-a7b559a4fe5e?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=70"
@@ -591,7 +591,7 @@ Construction, Civil Engineering &amp; Property Development
                             <use href="#i-arrow-right"></use>
                         </svg></span>
                 </a>
-                <a class="mosaic__tile mosaic__tile--w2" href="services.html#excavation">
+                <a class="mosaic__tile mosaic__tile--w2" href="{% url 'landing:services' %}#excavation">
                     <img alt="Excavator digging into loose sand at the edge of a prepared platform" decoding="async"
                         height="420" loading="lazy"
                         src="https://images.unsplash.com/photo-1583024011792-b165975b52f5?auto=format&amp;fit=crop&amp;w=800&amp;h=420&amp;q=70"
@@ -600,7 +600,7 @@ Construction, Civil Engineering &amp; Property Development
                             <use href="#i-arrow-right"></use>
                         </svg></span>
                 </a>
-                <a class="mosaic__tile" href="services.html#roads">
+                <a class="mosaic__tile" href="{% url 'landing:services' %}#roads">
                     <img alt="Road worker in an orange jacket standing beside a yellow works truck" decoding="async"
                         height="420" loading="lazy"
                         src="https://images.unsplash.com/photo-1593436878048-92622a77d315?auto=format&amp;fit=crop&amp;w=420&amp;h=420&amp;q=70"
@@ -609,7 +609,7 @@ Construction, Civil Engineering &amp; Property Development
                             <use href="#i-arrow-right"></use>
                         </svg></span>
                 </a>
-                <a class="mosaic__tile" href="services.html#civil">
+                <a class="mosaic__tile" href="{% url 'landing:services' %}#civil">
                     <img alt="Bulldozer pushing material across a bare earth working area" decoding="async" height="420"
                         loading="lazy"
                         src="https://images.unsplash.com/photo-1652303713917-2666b8bee507?auto=format&amp;fit=crop&amp;w=420&amp;h=420&amp;q=70"
@@ -618,7 +618,7 @@ Construction, Civil Engineering &amp; Property Development
                             <use href="#i-arrow-right"></use>
                         </svg></span>
                 </a>
-                <a class="mosaic__tile" href="services.html#surveying">
+                <a class="mosaic__tile" href="{% url 'landing:services' %}#surveying">
                     <img alt="Two site staff checking works from the shoulder of a road under construction"
                         decoding="async" height="420" loading="lazy"
                         src="https://images.unsplash.com/photo-1708117390188-d1547de962be?auto=format&amp;fit=crop&amp;w=420&amp;h=420&amp;q=70"
@@ -627,7 +627,7 @@ Construction, Civil Engineering &amp; Property Development
                             <use href="#i-arrow-right"></use>
                         </svg></span>
                 </a>
-                <a class="mosaic__tile" href="services.html#excavation">
+                <a class="mosaic__tile" href="{% url 'landing:services' %}#excavation">
                     <img alt="Orange and white excavator standing on freshly turned ground" decoding="async"
                         height="420" loading="lazy"
                         src="https://images.unsplash.com/photo-1630288214173-a119cf823388?auto=format&amp;fit=crop&amp;w=420&amp;h=420&amp;q=70"
@@ -636,7 +636,7 @@ Construction, Civil Engineering &amp; Property Development
                             <use href="#i-arrow-right"></use>
                         </svg></span>
                 </a>
-                <a class="mosaic__tile mosaic__tile--w2" href="services.html#drainage">
+                <a class="mosaic__tile mosaic__tile--w2" href="{% url 'landing:services' %}#drainage">
                     <img alt="Worker carrying out utility works in an opened section of street" decoding="async"
                         height="420" loading="lazy"
                         src="https://images.unsplash.com/photo-1529792083865-d23889753466?auto=format&amp;fit=crop&amp;w=800&amp;h=420&amp;q=70"
@@ -645,7 +645,7 @@ Construction, Civil Engineering &amp; Property Development
                             <use href="#i-arrow-right"></use>
                         </svg></span>
                 </a>
-                <a class="mosaic__tile" href="about.html#safety">
+                <a class="mosaic__tile" href="{% url 'landing:about' %}#safety">
                     <img alt="Red safety helmet resting on a paved surface at a work area" decoding="async" height="420"
                         loading="lazy"
                         src="https://images.unsplash.com/photo-1567954970774-58d6aa6c50dc?auto=format&amp;fit=crop&amp;w=420&amp;h=420&amp;q=70"
@@ -654,7 +654,7 @@ Construction, Civil Engineering &amp; Property Development
                             <use href="#i-arrow-right"></use>
                         </svg></span>
                 </a>
-                <a class="mosaic__tile" href="services.html#excavation">
+                <a class="mosaic__tile" href="{% url 'landing:services' %}#excavation">
                     <img alt="Tracked heavy equipment positioned on broken rock at a working face" decoding="async"
                         height="420" loading="lazy"
                         src="https://images.unsplash.com/photo-1580901368855-059c4792ff22?auto=format&amp;fit=crop&amp;w=420&amp;h=420&amp;q=70"
@@ -663,7 +663,7 @@ Construction, Civil Engineering &amp; Property Development
                             <use href="#i-arrow-right"></use>
                         </svg></span>
                 </a>
-                <a class="mosaic__tile mosaic__tile--w2" href="services.html#roads">
+                <a class="mosaic__tile mosaic__tile--w2" href="{% url 'landing:services' %}#roads">
                     <img alt="Construction vehicle moving along a graded dirt haul road" decoding="async" height="420"
                         loading="lazy"
                         src="https://images.unsplash.com/photo-1649034872337-feaa751786ae?auto=format&amp;fit=crop&amp;w=800&amp;h=420&amp;q=70"
@@ -710,7 +710,7 @@ Construction, Civil Engineering &amp; Property Development
                         nobody else wanted. The plant fleet grew, then the engineering team, then the building
                         division — but the way we work on site has not changed. Turn up prepared, set out
                         accurately, and leave the ground better than we found it.</p>
-                    <a class="btn btn--light mt-6" href="about.html">Read the full story</a>
+                    <a class="btn btn--light mt-6" href="{% url 'landing:about' %}">Read the full story</a>
                 </div>
                 <div class="reveal">
                     <div class="frame frame--wide">
@@ -880,37 +880,7 @@ Construction, Civil Engineering &amp; Property Development
             </div>
         </div>
     </section>
-    <!-- ====================================================================== -->
-    <!-- PARTNERS                                                               -->
-    <!-- ====================================================================== -->
-    <section aria-labelledby="partners-heading" class="section section--tight">
-        <div class="wrap">
-            <div class="section-head section-head--center reveal">
-                <p class="eyebrow eyebrow--center">Supply chain</p>
-                <h2 id="partners-heading">Who we build with.</h2>
-                <p>Placeholder marks standing in for the suppliers, consultant and partners SKK works alongside.
-                </p>
-            </div>
-            <div class="partners reveal">
-                <div class="partner"><span class="partner__mark">RIFT<em>STONE</em></span><span
-                        class="partner__kind">Aggregates</span></div>
-                <div class="partner"><span class="partner__mark">MERIDIAN<em>CEM</em></span><span
-                        class="partner__kind">Cement</span></div>
-                <div class="partner"><span class="partner__mark">AXLE<em>PLANT</em></span><span
-                        class="partner__kind">Equipment hire</span></div>
-                <div class="partner"><span class="partner__mark">KESTREL<em>STEEL</em></span><span
-                        class="partner__kind">Reinforcement</span></div>
-                <div class="partner"><span class="partner__mark">ATRIA<em>ARCH</em></span><span
-                        class="partner__kind">Architecture</span></div>
-                <div class="partner"><span class="partner__mark">GEO<em>PROBE</em></span><span
-                        class="partner__kind">Geotechnical</span></div>
-                <div class="partner"><span class="partner__mark">NORTHBANK<em>DEV</em></span><span
-                        class="partner__kind">Developers</span></div>
-                <div class="partner"><span class="partner__mark">VIA<em>LINE</em></span><span
-                        class="partner__kind">Infrastructure</span></div>
-            </div>
-        </div>
-    </section>
+
     <!-- ====================================================================== -->
     <!-- FINAL CTA                                                              -->
     <!-- ====================================================================== -->
@@ -927,8 +897,8 @@ Construction, Civil Engineering &amp; Property Development
                         to build it.</p>
                 </div>
                 <div class="cta-band__actions">
-                    <a class="btn btn--primary" href="contact.html">Request a quote</a>
-                    <a class="btn btn--light" href="tel:+254700000000">Call +254 700 000 000</a>
+                    <a class="btn btn--primary" href="{% url 'landing:contact' %}">Contact Us</a>
+                    <a class="btn btn--light" href="tel:+254721678758">Call +254 721 678 758</a>
                 </div>
             </div>
         </div>

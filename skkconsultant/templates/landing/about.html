@@ -63,7 +63,7 @@ Our story, people and standards
                         with an in-house plant fleet and a permanent engineering team. The scale has changed. The habit
                         of
                         arriving prepared has not.</p>
-                    <a class="btn btn--ghost mt-6" href="portfolio.html">See what we have built</a>
+                    <a class="btn btn--ghost mt-6" href="{% url 'landing:gallery' %}">See what we have built</a>
                 </div>
             </div>
         </div>
@@ -440,8 +440,8 @@ Our story, people and standards
                         for it.</p>
                 </div>
                 <div class="cta-band__actions">
-                    <a class="btn btn--primary" href="contact.html">Start a conversation</a>
-                    <a class="btn btn--light" href="services.html">Browse services</a>
+                    <a class="btn btn--primary" href="{% url 'landing:contact' %}">Contact Us</a>
+                    <a class="btn btn--light" href="{% url 'landing:services' %}">Browse services</a>
                 </div>
             </div>
         </div>

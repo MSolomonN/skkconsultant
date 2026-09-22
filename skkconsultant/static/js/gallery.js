@@ -114,12 +114,16 @@
   });
 
   /* -------------------------------------------------------- Pause conditions */
+  
+  // Temporarily disabled pause feature, you can enable it in the future
+  /*
   hero.addEventListener('mouseenter', function () { setPaused(true); });
   hero.addEventListener('mouseleave', function () { setPaused(false); });
   hero.addEventListener('focusin', function () { setPaused(true); });
   hero.addEventListener('focusout', function (e) {
     if (!hero.contains(e.relatedTarget)) { setPaused(false); }
   });
+  */
 
   document.addEventListener('visibilitychange', function () {
     if (document.hidden) { stop(); } else if (!paused) { start(); }

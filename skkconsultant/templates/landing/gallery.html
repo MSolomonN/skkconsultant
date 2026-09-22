@@ -22,28 +22,17 @@ Project Portfolio &amp; Gallery
         <div aria-hidden="true" class="page-hero__scrim"></div>
         <div class="page-hero__inner wrap">
             <nav aria-label="Breadcrumb" class="crumbs">
-                <a href="index.html">Home</a> <span aria-hidden="true">/</span> <span
+                <a href="/">Home</a> <span aria-hidden="true">/</span> <span
                     aria-current="page">Portfolio</span>
             </nav>
             <h1>Project portfolio</h1>
-            <p>Forty-six views across the disciplines SKK Consultant covers. Filter by category, or open any image to
-                read
-                what the work involved.</p>
+            <p>
+                Forty-six views across the disciplines SKK Consultant covers. 
+                Filter by category, or open any image to read what the work involved.
+            </p>
         </div>
     </section>
-    <!-- ====================================================================== -->
-    <!-- CATEGORY SUMMARY                                                       -->
-    <!-- ====================================================================== -->
-    <section class="section section--tight section--flush-top">
-        <div class="wrap">
-            <div class="cat-strip mt-7 reveal">
-                <div><b>46</b><span>Views in the gallery</span></div>
-                <div><b>8</b><span>Disciplines represented</span></div>
-                <div><b>2</b><span>Before and after comparisons</span></div>
-                <div><b>250+</b><span>Projects delivered to date</span></div>
-            </div>
-        </div>
-    </section>
+    
     <!-- ====================================================================== -->
     <!-- FILTERS                                                                -->
     <!-- ====================================================================== -->
@@ -61,7 +50,6 @@ Project Portfolio &amp; Gallery
                 <button aria-pressed="false" class="filter" data-filter="surveying" type="button">Surveying</button>
                 <button aria-pressed="false" class="filter" data-filter="civil" type="button">Civil engineering</button>
                 <button aria-pressed="false" class="filter" data-filter="landscaping" type="button">Landscaping</button>
-                <p aria-live="polite" class="filters__count" data-visible-count="">46 projects</p>
             </div>
         </div>
     </div>
@@ -814,6 +802,7 @@ Project Portfolio &amp; Gallery
                 to keep browsing.</p>
         </div>
     </section>
+
     <!-- ====================================================================== -->
     <!-- BEFORE / AFTER                                                         -->
     <!-- ====================================================================== -->
@@ -841,11 +830,6 @@ Project Portfolio &amp; Gallery
                             step="1" type="range" value="50" />
                         <span aria-hidden="true" class="ba__handle"></span>
                     </div>
-                    <div class="ba-caption">
-                        <h3>Access road: formation to surfacing</h3>
-                        <p>Bulk earthworks and formation on the left; the completed carriageway and shoulders on the
-                            right.</p>
-                    </div>
                 </div>
                 <div>
                     <div class="ba" data-ba="">
@@ -863,15 +847,11 @@ Project Portfolio &amp; Gallery
                             type="range" value="50" />
                         <span aria-hidden="true" class="ba__handle"></span>
                     </div>
-                    <div class="ba-caption">
-                        <h3>Yard: subgrade to finished cabro</h3>
-                        <p>Exposed subgrade on the left; compacted sub-base and laid interlocking blocks on the right.
-                        </p>
-                    </div>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- ====================================================================== -->
     <!-- CTA                                                                    -->
     <!-- ====================================================================== -->
@@ -888,11 +868,15 @@ Project Portfolio &amp; Gallery
                     </p>
                 </div>
                 <div class="cta-band__actions">
-                    <a class="btn btn--primary" href="contact.html">Request a quote</a>
-                    <a class="btn btn--light" href="services.html">Browse services</a>
+                    <a class="btn btn--primary" href="{% url 'landing:contact' %}">Contact Us</a>
+                    <a class="btn btn--light" href="{% url 'landing:services' %}">Browse services</a>
                 </div>
             </div>
         </div>
     </section>
 </main>
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static 'js/portfolio.js' %}"></script>
 {% endblock %}

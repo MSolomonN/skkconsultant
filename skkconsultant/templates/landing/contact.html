@@ -6,7 +6,7 @@ Request a construction quote
 {% endblock %}
 
 {% block style %}
-<link href="{% static 'css/contact.css' %}" rel="stylesheet" />
+<link href="{% static 'css/contact.css' %}?v=1.3" rel="stylesheet" />
 {% endblock %}
 
 {% block content %}
@@ -25,8 +25,10 @@ Request a construction quote
                 <a href="index.html">Home</a> <span aria-hidden="true">/</span> <span aria-current="page">Contact</span>
             </nav>
             <h1>Let's talk about your site</h1>
-            <p>Send the drawings, the plot number or just a description. We will tell you what the job needs and roughly
-                what it costs.</p>
+            <p>
+                Send the drawings, the plot number or just a description. We will tell you what the job needs and roughly
+                what it costs.
+            </p>
         </div>
     </section>
     <!-- ====================================================================== -->
@@ -37,247 +39,39 @@ Request a construction quote
             <h2 class="visually-hidden" id="routes-heading">Ways to reach us</h2>
             <div class="routes">
                 <article class="route">
-                    <span class="route__icon"><svg aria-hidden="true" class="icon">
+                    <span class="route__icon">
+                        <svg aria-hidden="true" class="icon">
                             <use href="#i-phone"></use>
-                        </svg></span>
+                        </svg>
+                    </span>
                     <h2>Call the office</h2>
-                    <p><a href="tel:+254700000000">+254 700 000 000</a></p>
+                    <p><a href="tel:+254721678758">+254 721 678 758</a></p>
                     <small>Fastest route for urgent site issues and plant availability.</small>
                 </article>
                 <article class="route">
-                    <span class="route__icon"><svg aria-hidden="true" class="icon">
+                    <span class="route__icon">
+                        <svg aria-hidden="true" class="icon">
                             <use href="#i-mail"></use>
-                        </svg></span>
+                        </svg>
+                    </span>
                     <h2>Email an enquiry</h2>
-                    <p><a href="mailto:hello@skkconsultants.example">hello@skkconsultants.example</a></p>
-                    <small>Attach drawings, a site plan or a bill of quantities and we will price it.</small>
+                    <p><a href="mailto:wachingakennedy@gmail.com">wachingakennedy@gmail.com</a></p>
+                    <small>Send drawings, a site plan or a bill of quantities and we will price it.</small>
                 </article>
                 <article class="route">
-                    <span class="route__icon"><svg aria-hidden="true" class="icon">
+                    <span class="route__icon">
+                        <svg aria-hidden="true" class="icon">
                             <use href="#i-pin"></use>
-                        </svg></span>
+                        </svg>
+                    </span>
                     <h2>Visit the yard</h2>
-                    <p>Industrial Area, Nairobi</p>
+                    <p>Kiambu Rd, Nairobi</p>
                     <small>Plant yard and offices. Call ahead so someone is free to meet you.</small>
                 </article>
             </div>
         </div>
     </section>
-    <!-- ====================================================================== -->
-    <!-- FORM + SIDEBAR                                                         -->
-    <!-- ====================================================================== -->
-    <section aria-labelledby="form-heading" class="section section--tight">
-        <div class="wrap">
-            <div class="contact-grid">
-                <!-- ========================================================== FORM -->
-                <div class="form-panel reveal">
-                    <p class="eyebrow">Project enquiry</p>
-                    <h2 id="form-heading">Tell us about the work.</h2>
-                    <p class="mt-4 text-muted">The more detail you give, the more useful the first reply will be. Fields
-                        marked
-                        with a red asterisk are required.</p>
-                    <div class="form-status" data-form-status="" role="status">
-                        <svg aria-hidden="true" class="icon">
-                            <use href="#i-info"></use>
-                        </svg>
-                        <p data-form-status-text=""></p>
-                    </div>
-                    <form class="mt-6" data-contact-form="" novalidate="">
-                        <div class="form-grid">
-                            <div class="field">
-                                <label for="fullname">Full name <span aria-hidden="true" class="req">*</span></label>
-                                <input autocomplete="name" data-label="Your name" id="fullname" name="fullname"
-                                    required="" type="text" />
-                                <p aria-live="polite" class="error"></p>
-                            </div>
-                            <div class="field">
-                                <label for="email">Email <span aria-hidden="true" class="req">*</span></label>
-                                <input autocomplete="email" data-label="Your email" id="email" name="email" required=""
-                                    type="email" />
-                                <p aria-live="polite" class="error"></p>
-                            </div>
-                            <div class="field">
-                                <label for="phone">Phone <span aria-hidden="true" class="req">*</span></label>
-                                <input autocomplete="tel" data-label="Your phone number" id="phone" name="phone"
-                                    required="" type="tel" />
-                                <p aria-live="polite" class="error"></p>
-                            </div>
-                            <div class="field">
-                                <label for="company">Company</label>
-                                <input autocomplete="organization" data-label="Company" id="company" name="company"
-                                    type="text" />
-                                <p aria-live="polite" class="error"></p>
-                            </div>
-                            <div class="field">
-                                <label for="service">Service required <span aria-hidden="true"
-                                        class="req">*</span></label>
-                                <select data-label="Service required" id="service" name="service" required="">
-                                    <option value="">Choose a service</option>
-                                    <option>Real estate development</option>
-                                    <option>Building construction</option>
-                                    <option>Cabro and paving</option>
-                                    <option>Excavation and earthworks</option>
-                                    <option>Site surveying</option>
-                                    <option>Soil testing</option>
-                                    <option>Civil engineering</option>
-                                    <option>Road construction</option>
-                                    <option>Drainage</option>
-                                    <option>Structural works</option>
-                                    <option>Project management</option>
-                                    <option>Landscaping</option>
-                                    <option>Not sure yet</option>
-                                </select>
-                                <p aria-live="polite" class="error"></p>
-                            </div>
-                            <div class="field">
-                                <label for="location">Project location <span aria-hidden="true"
-                                        class="req">*</span></label>
-                                <input data-label="Project location" id="location" name="location"
-                                    placeholder="Town, area or plot reference" required="" type="text" />
-                                <p aria-live="polite" class="error"></p>
-                            </div>
-                            <div class="field field--full">
-                                <label for="budget">Estimated budget</label>
-                                <select data-label="Estimated budget" id="budget" name="budget">
-                                    <option value="">Prefer not to say</option>
-                                    <option>Under KES 1M</option>
-                                    <option>KES 1M – 5M</option>
-                                    <option>KES 5M – 20M</option>
-                                    <option>KES 20M – 100M</option>
-                                    <option>Over KES 100M</option>
-                                </select>
-                                <p aria-live="polite" class="error"></p>
-                            </div>
-                            <div class="field field--full">
-                                <label for="message">Project details <span aria-hidden="true"
-                                        class="req">*</span></label>
-                                <textarea data-label="Project details" id="message" name="message"
-                                    placeholder="Site conditions, approximate size, timing, and anything already designed or approved."
-                                    required=""></textarea>
-                                <p aria-live="polite" class="error"></p>
-                            </div>
-                        </div>
-                        <div class="form-foot">
-                            <button class="btn btn--primary" type="submit">Send enquiry</button>
-                            <p>Demonstration build: this form validates in the browser and does not transmit anything.
-                            </p>
-                        </div>
-                    </form>
-                </div>
-                <!-- ======================================================= SIDEBAR -->
-                <aside class="sticky-top reveal">
-                    <div class="aside-block">
-                        <h2>Office hours</h2>
-                        <dl class="hours">
-                            <div>
-                                <dt>Monday – Thursday</dt>
-                                <dd>8:00 – 17:30</dd>
-                            </div>
-                            <div>
-                                <dt>Friday</dt>
-                                <dd>8:00 – 17:00</dd>
-                            </div>
-                            <div>
-                                <dt>Saturday</dt>
-                                <dd>8:00 – 13:00</dd>
-                            </div>
-                            <div>
-                                <dt>Sunday</dt>
-                                <dd class="is-closed">Closed</dd>
-                            </div>
-                            <div>
-                                <dt>Public holidays</dt>
-                                <dd class="is-closed">Closed</dd>
-                            </div>
-                        </dl>
-                        <p class="mt-4 text-muted">Active sites run to their own programme. Site teams are reachable
-                            through the
-                            project agent outside these hours.</p>
-                    </div>
-                    <div class="aside-block">
-                        <h2>Find the yard</h2>
-                        <div class="map">
-                            <img alt="" decoding="async" height="600" loading="lazy"
-                                src="https://images.unsplash.com/photo-1507415710579-79b32edf8a78?auto=format&amp;fit=crop&amp;w=800&amp;h=600&amp;q=60"
-                                width="800" />
-                            <div class="map__overlay">
-                                <span class="map__pin"><svg aria-hidden="true" class="icon">
-                                        <use href="#i-pin"></use>
-                                    </svg></span>
-                                <b>Industrial Area, Nairobi</b>
-                                <span>Drop an interactive map embed here once the yard address is confirmed.</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="aside-block">
-                        <h2>Where we work</h2>
-                        <ul class="areas">
-                            <li>Nairobi</li>
-                            <li>Kiambu</li>
-                            <li>Machakos</li>
-                            <li>Kajiado</li>
-                            <li>Nakuru</li>
-                            <li>Mombasa</li>
-                            <li>Kisumu</li>
-                            <li>Elsewhere on request</li>
-                        </ul>
-                    </div>
-                </aside>
-            </div>
-        </div>
-    </section>
-    <!-- ====================================================================== -->
-    <!-- FAQ                                                                    -->
-    <!-- ====================================================================== -->
-    <section aria-labelledby="faq-heading" class="section section--sunken">
-        <div class="wrap wrap--narrow">
-            <div class="section-head reveal">
-                <p class="eyebrow">Before you send</p>
-                <h2 id="faq-heading">Questions we get asked first.</h2>
-            </div>
-            <div class="faq reveal">
-                <details>
-                    <summary>How quickly can you visit the site?</summary>
-                    <p>Usually within three to five working days for sites within the Nairobi area, and within two weeks
-                        further
-                        afield. Urgent visits can often be arranged sooner if plant is already working nearby.</p>
-                </details>
-                <details>
-                    <summary>Do I need drawings before contacting you?</summary>
-                    <p>No. Plenty of enquiries start with a plot number and an idea. If the project needs a design, we
-                        can tell
-                        you what has to be produced and by whom before any pricing is meaningful.</p>
-                </details>
-                <details>
-                    <summary>Do you take on small jobs?</summary>
-                    <p>Yes. A single driveway, a soil test or a boundary survey are all normal enquiries. Small work is
-                        often
-                        how longer relationships start.</p>
-                </details>
-                <details>
-                    <summary>Can you take a project over midway through?</summary>
-                    <p>Sometimes. We would survey what has been built, test where necessary and give you an honest
-                        assessment
-                        before agreeing to continue. We will not take responsibility for work we have not inspected.</p>
-                </details>
-                <details>
-                    <summary>How do you price work?</summary>
-                    <p>Measured against a bill of quantities where one exists, or against our own take-off from the
-                        drawings and
-                        site survey. Provisional sums are used only where the scope genuinely cannot be fixed yet, and
-                        they are
-                        flagged clearly.</p>
-                </details>
-                <details>
-                    <summary>What happens after handover?</summary>
-                    <p>You receive as-built drawings, test records and the snagging sign-off as a single pack. Defects
-                        liability
-                        terms are set out in the contract and we return to close out anything raised within that period.
-                    </p>
-                </details>
-            </div>
-        </div>
-    </section>
+
     <!-- ====================================================================== -->
     <!-- CTA                                                                    -->
     <!-- ====================================================================== -->
@@ -290,13 +84,14 @@ Request a construction quote
             <div class="cta-band__inner">
                 <div>
                     <h2>Prefer to just call?</h2>
-                    <p>The office picks up during working hours, and whoever answers can usually tell you straight away
-                        whether
-                        we are the right fit.</p>
+                    <p>
+                        The office picks up during working hours, and whoever answers can usually 
+                        tell you straight away whether we are the right fit.
+                    </p>
                 </div>
                 <div class="cta-band__actions">
-                    <a class="btn btn--primary" href="tel:+254700000000">Call +254 700 000 000</a>
-                    <a class="btn btn--light" href="mailto:hello@skkconsultants.example">Email us</a>
+                    <a class="btn btn--primary" href="tel:+254721678758">Call +254 721 678 758</a>
+                    <a class="btn btn--light" href="mailto:wachingakennedy@gmail.com">Email us</a>
                 </div>
             </div>
         </div>
