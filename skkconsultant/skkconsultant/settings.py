@@ -35,10 +35,20 @@ if not LOCAL_MODE: STATIC_ROOT = conf.STATIC_ROOT
 
 ALLOWED_HOSTS = ["*"]
 
-# Application definition
+# s3 cdn configurations
+AWS_ACCESS_KEY_ID = conf.AWS_ACCESS_KEY_ID
+AWS_SECRET_ACCESS_KEY = conf.AWS_SECRET_ACCESS_KEY
+AWS_STORAGE_BUCKET_NAME = conf.AWS_STORAGE_BUCKET_NAME
+AWS_S3_ENDPOINT_URL = conf.AWS_S3_ENDPOINT_URL
+AWS_S3_SIGNATURE_VERSION = conf.AWS_S3_SIGNATURE_VERSION
+
+# s3 cdn media  storage
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 # custom user model
 AUTH_USER_MODEL = 'accounts.User'
+
+# Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -50,6 +60,7 @@ INSTALLED_APPS = [
     'django.contrib.sitemaps',
     'accounts',
     'landing',
+    'gallery',
 ]
 
 MIDDLEWARE = [
