@@ -74,8 +74,8 @@ Construction, Civil Engineering &amp; Property Development
                 <p class="hero__sub" data-hero-sub="">Surveying, testing and supervision that keep a build accurate
                     from setting out onwards.</p>
                 <div class="hero__actions">
-                    <a class="btn btn--primary" href="contact.html">Request a quote</a>
-                    <a class="btn btn--light" href="portfolio.html">See our work</a>
+                    <a class="btn btn--primary" href="{% url 'landing:contact' %}">Contact Us</a>
+                    <a class="btn btn--light" href="{% url 'landing:gallery' %}">See our work</a>
                 </div>
             </div>
         </div>
@@ -119,19 +119,19 @@ Construction, Civil Engineering &amp; Property Development
             width="1800" />
         <div class="stats__inner wrap">
             <div class="stat">
-                <p class="stat__num" data-count="15" data-suffix="+">15<span>+</span></p>
+                <p class="stat__num" data-count="20" data-suffix="+">20<span>+</span></p>
                 <p class="stat__label">Years in the field</p>
             </div>
             <div class="stat">
-                <p class="stat__num" data-count="250" data-suffix="+">250<span>+</span></p>
+                <p class="stat__num" data-count="1500" data-suffix="+">1500<span>+</span></p>
                 <p class="stat__label">Projects delivered</p>
             </div>
             <div class="stat">
-                <p class="stat__num" data-count="100" data-suffix="+">100<span>+</span></p>
+                <p class="stat__num" data-count="1000" data-suffix="+">1000<span>+</span></p>
                 <p class="stat__label">Clients served</p>
             </div>
             <div class="stat">
-                <p class="stat__num" data-count="40" data-suffix="+">40<span>+</span></p>
+                <p class="stat__num" data-count="100" data-suffix="+">100<span>+</span></p>
                 <p class="stat__label">Professionals on staff</p>
             </div>
         </div>
@@ -180,7 +180,7 @@ Construction, Civil Engineering &amp; Property Development
                     <div class="intro__signature">
                         <div class="intro__stat"><b>15+</b><span>Years operating</span></div>
                         <div class="intro__stat"><b>12</b><span>Service lines</span></div>
-                        <a class="link-arrow" href="about.html">
+                        <a class="link-arrow" href="{% url 'landing:about' %}">
                             Discover SKK Consultant
                             <svg aria-hidden="true" class="icon">
                                 <use href="#i-arrow-right"></use>
