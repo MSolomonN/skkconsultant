@@ -1,0 +1,155 @@
+/* ==========================================================================
+   SKK CONSULTANTS — index.css
+   Homepage-only rules.
+   ========================================================================== */
+
+/* Introduction: an off-centre split with the photo bleeding to the page edge */
+.intro { background: var(--s-raised); }
+
+.intro__grid {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: clamp(2rem, 1rem + 4vw, 5rem);
+  align-items: center;
+}
+
+.intro__media { position: relative; }
+
+/* A second, smaller photo overlapping the main one */
+.intro__inset {
+  position: absolute;
+  right: -12%;
+  bottom: -10%;
+  width: 46%;
+  border: 8px solid var(--c-white);
+  box-shadow: var(--shadow-2);
+}
+
+.intro__signature {
+  margin-top: var(--sp-6);
+  padding-top: var(--sp-5);
+  border-top: 1px solid var(--c-rule);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--sp-6);
+}
+
+.intro__stat b {
+  display: block;
+  font-family: var(--f-display);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--c-brand);
+}
+.intro__stat span {
+  font-size: var(--t-xs);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--c-ink-faint);
+}
+
+@media (max-width: 900px) {
+  .intro__grid { grid-template-columns: 1fr; }
+  .intro__inset { position: static; width: 100%; border: 0; box-shadow: none; margin-top: var(--sp-3); }
+}
+
+/* Services band header — the "view all" sits opposite the heading */
+.services-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--sp-5);
+  margin-bottom: var(--sp-6);
+}
+.services-head .section-head { margin-bottom: 0; }
+
+/* Why SKK — photo column runs full height beside the benefit list */
+.why__grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: clamp(2rem, 1rem + 4vw, 4.5rem);
+  align-items: stretch;
+}
+.why__media { position: relative; min-height: 420px; }
+.why__media img {
+  position: absolute;
+  inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+.why__badge {
+  position: absolute;
+  left: 0; bottom: 0;
+  z-index: 2;
+  padding: var(--sp-5);
+  max-width: 17rem;
+  background: var(--c-brand);
+  color: var(--c-white);
+}
+.why__badge b {
+  display: block;
+  font-family: var(--f-display);
+  font-size: 1.5rem;
+  line-height: 1.15;
+}
+.why__badge span {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+@media (max-width: 900px) {
+  .why__grid { grid-template-columns: 1fr; }
+  .why__media { min-height: 300px; }
+}
+
+/* Second stats block, on concrete rather than photography */
+.figures {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--c-rule);
+  border: 1px solid var(--c-rule);
+}
+.figure {
+  background: var(--c-offwhite);
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+}
+.figure b {
+  display: block;
+  font-family: var(--f-display);
+  font-size: clamp(2rem, 1.4rem + 2vw, 3rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: var(--c-charcoal);
+}
+.figure span {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: var(--t-sm);
+  color: var(--c-ink-muted);
+}
+.figure::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 3px;
+  background: var(--c-brand);
+  margin-bottom: var(--sp-4);
+}
+@media (max-width: 860px) { .figures { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 460px) { .figures { grid-template-columns: 1fr; } }
+
+/* Company story — dark band with a wide photograph */
+.story__grid {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: clamp(2rem, 1rem + 4vw, 4.5rem);
+  align-items: center;
+}
+@media (max-width: 900px) { .story__grid { grid-template-columns: 1fr; } }

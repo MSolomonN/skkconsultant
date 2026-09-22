@@ -1,0 +1,380 @@
+/* ==========================================================================
+   SKK CONSULTANTS — common.css
+   Design tokens, reset, base typography, buttons, forms.
+   Loaded first on every page.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. TOKENS
+   -------------------------------------------------------------------------- */
+:root {
+  /* Brand palette */
+  --c-brand:        #A52A2A;
+  --c-brand-dark:   #7E1F1F;
+  --c-brand-light:  #C24141;
+
+  --c-charcoal:     #202020;
+  --c-slate:        #343A40;
+  --c-sand:         #D6B48A;
+  --c-concrete:     #E8E6E3;
+  --c-offwhite:     #F7F6F3;
+  --c-white:        #FFFFFF;
+
+  /* Derived neutrals */
+  --c-ink:          #202020;
+  --c-ink-muted:    #5A6169;
+  --c-ink-faint:    #8A9099;
+  --c-rule:         #D8D5D0;
+  --c-rule-dark:    rgba(255, 255, 255, 0.14);
+
+  /* Surfaces */
+  --s-page:         var(--c-offwhite);
+  --s-raised:       var(--c-white);
+  --s-sunken:       var(--c-concrete);
+  --s-dark:         var(--c-charcoal);
+  --s-dark-2:       #171717;
+
+  /* Type */
+  --f-display: "Archivo", "Archivo Narrow", "Helvetica Neue", Arial, sans-serif;
+  --f-body:    "IBM Plex Sans", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  /* Type scale — 1.25 minor third, fluid */
+  --t-xs:   0.75rem;
+  --t-sm:   0.8125rem;
+  --t-base: 1rem;
+  --t-md:   clamp(1.0625rem, 0.98rem + 0.35vw, 1.1875rem);
+  --t-lg:   clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem);
+  --t-xl:   clamp(1.5rem, 1.25rem + 1.1vw, 2.125rem);
+  --t-2xl:  clamp(1.875rem, 1.4rem + 2vw, 3rem);
+  --t-3xl:  clamp(2.375rem, 1.6rem + 3.4vw, 4.25rem);
+  --t-4xl:  clamp(2.75rem, 1.5rem + 5.4vw, 6rem);
+
+  /* Spacing */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.5rem;
+  --sp-6: 2rem;
+  --sp-7: 3rem;
+  --sp-8: 4rem;
+  --sp-9: 6rem;
+  --sp-10: 8rem;
+
+  /* Section rhythm */
+  --section-y: clamp(3.5rem, 2rem + 6vw, 7rem);
+
+  /* Layout */
+  --wrap:      1320px;
+  --wrap-text: 68ch;
+  --gutter:    clamp(1.125rem, 0.6rem + 2.4vw, 3rem);
+  --header-h:  76px;
+
+  /* Motion */
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --dur:  0.4s;
+
+  /* Elevation — used sparingly, industrial not fluffy */
+  --shadow-1: 0 1px 2px rgba(32, 32, 32, 0.08);
+  --shadow-2: 0 18px 44px -22px rgba(32, 32, 32, 0.45);
+}
+
+/* --------------------------------------------------------------------------
+   2. RESET
+   -------------------------------------------------------------------------- */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-h) + 1rem);
+}
+
+body {
+  margin: 0;
+  background: var(--s-page);
+  color: var(--c-ink);
+  font-family: var(--f-body);
+  font-size: var(--t-base);
+  line-height: 1.65;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+body.is-locked { overflow: hidden; }
+
+h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd { margin: 0; }
+ul, ol { margin: 0; padding: 0; }
+li { list-style: none; }
+
+img, picture, video, svg {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+  background-color: var(--c-concrete);
+  color: transparent;
+}
+
+a { color: inherit; text-decoration: none; }
+
+button, input, select, textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button { background: none; border: 0; cursor: pointer; }
+
+address { font-style: normal; }
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--c-rule);
+  margin: var(--sp-6) 0;
+}
+
+/* --------------------------------------------------------------------------
+   3. TYPOGRAPHY
+   -------------------------------------------------------------------------- */
+h1, h2, h3, h4, h5 {
+  font-family: var(--f-display);
+  font-weight: 700;
+  line-height: 1.04;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+h1 { font-size: var(--t-3xl); }
+h2 { font-size: var(--t-2xl); }
+h3 { font-size: var(--t-xl); }
+h4 { font-size: var(--t-lg); }
+h5 { font-size: var(--t-md); letter-spacing: -0.005em; }
+
+p { text-wrap: pretty; }
+
+strong { font-weight: 600; }
+
+/* Section eyebrow: a short red rule + small tracked label.
+   The brief specifies #A52A2A for "small labels" and "decorative lines". */
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-family: var(--f-body);
+  font-size: var(--t-xs);
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--c-brand);
+  margin-bottom: var(--sp-4);
+}
+
+.eyebrow::before {
+  content: "";
+  width: 34px;
+  height: 2px;
+  background: var(--c-brand);
+  flex: none;
+}
+
+.eyebrow--center { justify-content: center; }
+.eyebrow--light { color: var(--c-sand); }
+.eyebrow--light::before { background: var(--c-sand); }
+
+/* Section heading block */
+.section-head { max-width: 44rem; margin-bottom: var(--sp-7); }
+.section-head--center { margin-inline: auto; text-align: center; }
+.section-head p {
+  margin-top: var(--sp-4);
+  color: var(--c-ink-muted);
+  font-size: var(--t-md);
+  max-width: 60ch;
+}
+.section-head--center p { margin-inline: auto; }
+
+.lede {
+  font-size: var(--t-md);
+  color: var(--c-ink-muted);
+  max-width: var(--wrap-text);
+}
+
+/* --------------------------------------------------------------------------
+   4. BUTTONS
+   -------------------------------------------------------------------------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.95rem 1.7rem;
+  border: 1.5px solid transparent;
+  font-family: var(--f-body);
+  font-size: var(--t-sm);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color var(--dur) var(--ease),
+              color var(--dur) var(--ease),
+              border-color var(--dur) var(--ease);
+}
+
+.btn--primary {
+  background: var(--c-brand);
+  border-color: var(--c-brand);
+  color: var(--c-white);
+}
+.btn--primary:hover,
+.btn--primary:focus-visible { background: var(--c-brand-dark); border-color: var(--c-brand-dark); }
+
+.btn--ghost {
+  border-color: var(--c-charcoal);
+  color: var(--c-charcoal);
+}
+.btn--ghost:hover,
+.btn--ghost:focus-visible { background: var(--c-charcoal); color: var(--c-white); }
+
+.btn--light {
+  border-color: rgba(255, 255, 255, 0.55);
+  color: var(--c-white);
+}
+.btn--light:hover,
+.btn--light:focus-visible { background: var(--c-white); color: var(--c-charcoal); border-color: var(--c-white); }
+
+.btn--block { width: 100%; }
+
+/* Text link with a rule that grows on hover */
+.link-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: var(--t-sm);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--c-brand);
+  padding-bottom: 2px;
+  border-bottom: 1.5px solid currentColor;
+  transition: color var(--dur) var(--ease);
+}
+.link-arrow:hover { color: var(--c-brand-dark); }
+.link-arrow--light { color: var(--c-sand); }
+.link-arrow--light:hover { color: var(--c-white); }
+
+.icon { width: 1em; height: 1em; flex: none; fill: none; stroke: currentColor; stroke-width: 2; }
+
+/* --------------------------------------------------------------------------
+   5. FORM PRIMITIVES
+   -------------------------------------------------------------------------- */
+.field { display: flex; flex-direction: column; gap: 0.4rem; }
+
+.field label {
+  font-size: var(--t-sm);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--c-slate);
+}
+
+.field .req { color: var(--c-brand); }
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  padding: 0.8rem 0.9rem;
+  background: var(--c-white);
+  border: 1px solid var(--c-rule);
+  border-radius: 0;
+  font-size: var(--t-base);
+  transition: border-color 0.2s var(--ease), box-shadow 0.2s var(--ease);
+}
+
+.field textarea { resize: vertical; min-height: 9rem; }
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: var(--c-brand);
+  box-shadow: inset 0 -2px 0 0 var(--c-brand);
+}
+
+.field .error {
+  min-height: 1.15rem;
+  font-size: var(--t-xs);
+  color: var(--c-brand);
+}
+
+.field.is-invalid input,
+.field.is-invalid select,
+.field.is-invalid textarea { border-color: var(--c-brand); }
+
+/* --------------------------------------------------------------------------
+   6. ACCESSIBILITY
+   -------------------------------------------------------------------------- */
+:focus-visible {
+  outline: 3px solid var(--c-brand);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -110%);
+  z-index: 200;
+  background: var(--c-brand);
+  color: var(--c-white);
+  padding: 0.75rem 1.25rem;
+  font-weight: 600;
+  transition: transform 0.2s var(--ease);
+}
+.skip-link:focus { transform: translate(-50%, 0); }
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   7. PRINT
+   -------------------------------------------------------------------------- */
+@media print {
+  .site-header, .site-footer, .hero, .cta-band { display: none; }
+  body { background: #fff; }
+}
+
+/* --------------------------------------------------------------------------
+   8. ICON SPRITE
+   The <symbol> definitions live in the markup; the carrier <svg> must not
+   occupy space or be announced.
+   -------------------------------------------------------------------------- */
+.sprite {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}

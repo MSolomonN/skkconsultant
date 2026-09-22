@@ -1,0 +1,9 @@
+**/__pycache__
+*.log
+*.csv
+main_conf.py
+test.py
+simulation_data.py
+env
+media
+logs

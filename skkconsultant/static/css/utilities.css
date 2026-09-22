@@ -1,0 +1,96 @@
+/* ==========================================================================
+   SKK CONSULTANTS — utilities.css
+   Small single-purpose helpers. Keep this file short on purpose: layout
+   belongs in layout.css, anything reusable belongs in components.css.
+   ========================================================================== */
+
+/* Spacing */
+.mt-0 { margin-top: 0; }
+.mt-3 { margin-top: var(--sp-3); }
+.mt-4 { margin-top: var(--sp-4); }
+.mt-5 { margin-top: var(--sp-5); }
+.mt-6 { margin-top: var(--sp-6); }
+.mt-7 { margin-top: var(--sp-7); }
+.mb-4 { margin-bottom: var(--sp-4); }
+.mb-6 { margin-bottom: var(--sp-6); }
+
+/* Text */
+.text-center { text-align: center; }
+.text-muted  { color: var(--c-ink-muted); }
+.text-brand  { color: var(--c-brand); }
+.measure     { max-width: var(--wrap-text); }
+
+/* Layout helpers */
+.stack > * + * { margin-top: var(--sp-4); }
+.stack-lg > * + * { margin-top: var(--sp-6); }
+
+.cluster {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--sp-4);
+}
+
+.sticky-top {
+  position: sticky;
+  top: calc(var(--header-h) + var(--sp-5));
+}
+@media (max-width: 900px) { .sticky-top { position: static; } }
+
+/* Checklists — used for service capabilities */
+.ticks { display: grid; gap: 0.65rem; }
+.ticks li {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  gap: 0.7rem;
+  align-items: start;
+  font-size: 0.9375rem;
+  color: var(--c-slate);
+}
+.ticks .icon {
+  width: 18px; height: 18px;
+  margin-top: 0.28rem;
+  color: var(--c-brand);
+}
+.section--dark .ticks li { color: rgba(232, 230, 227, 0.8); }
+.section--dark .ticks .icon { color: var(--c-sand); }
+
+.ticks--2 { grid-template-columns: repeat(2, 1fr); gap: 0.65rem var(--sp-5); }
+@media (max-width: 560px) { .ticks--2 { grid-template-columns: 1fr; } }
+
+/* Horizontal scroller for small screens — keeps mobile visual, not stacked text */
+.swipe-row {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(240px, 78%);
+  gap: var(--sp-4);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: var(--sp-4);
+  margin-inline: calc(var(--gutter) * -1);
+  padding-inline: var(--gutter);
+  scrollbar-width: thin;
+}
+.swipe-row > * { scroll-snap-align: start; }
+
+@media (min-width: 761px) {
+  .swipe-row {
+    grid-auto-flow: row;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    overflow: visible;
+    margin-inline: 0;
+    padding-inline: 0;
+    padding-bottom: 0;
+  }
+}
+
+/* A thin sand rule used to break up long dark sections */
+.rule-sand {
+  height: 1px;
+  background: linear-gradient(to right, var(--c-brand) 0 90px, var(--c-rule) 90px);
+  border: 0;
+  margin: 0;
+}
+.section--dark .rule-sand {
+  background: linear-gradient(to right, var(--c-brand) 0 90px, rgba(255,255,255,0.14) 90px);
+}
