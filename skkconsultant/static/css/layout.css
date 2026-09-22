@@ -112,6 +112,10 @@
 /* Wordmark */
 .brand { display: flex; align-items: center; gap: 0.7rem; }
 
+.brand__logo{
+  width: 50px;
+  background: transparent;
+}
 .brand__mark {
   width: 38px;
   height: 38px;
