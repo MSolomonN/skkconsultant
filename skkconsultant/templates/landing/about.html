@@ -1,0 +1,450 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Our story, people and standards
+{% endblock %}
+
+{% block style %}
+<link href="{% static 'css/about.css' %}" rel="stylesheet" />
+{% endblock %}
+
+{% block content %}
+<main id="main">
+    <!-- ====================================================================== -->
+    <!-- PAGE HERO                                                              -->
+    <!-- ====================================================================== -->
+    <section class="page-hero">
+        <img alt="Exposed concrete frame and floor slabs of a large building midway through construction"
+            class="page-hero__img" decoding="async" fetchpriority="high" height="900"
+            src="https://images.unsplash.com/photo-1536895058696-a69b1c7ba34f?auto=format&amp;fit=crop&amp;w=1800&amp;h=900&amp;q=72"
+            width="1800" />
+        <div aria-hidden="true" class="page-hero__scrim"></div>
+        <div class="page-hero__inner wrap">
+            <nav aria-label="Breadcrumb" class="crumbs">
+                <a href="index.html">Home</a> <span aria-hidden="true">/</span> <span aria-current="page">About</span>
+            </nav>
+            <h1>About SKK Consultants</h1>
+            <p>A construction and engineering contractor built around one idea: the crew that surveys the ground should
+                still be there when the last kerb goes in.</p>
+        </div>
+    </section>
+    <!-- ====================================================================== -->
+    <!-- COMPANY STORY                                                          -->
+    <!-- ====================================================================== -->
+    <section class="section">
+        <div class="wrap">
+            <div class="split split--wide-media">
+                <div class="split__media reveal">
+                    <div class="frame frame--landscape frame--offset">
+                        <img alt="Two site workers in high-visibility vests discussing progress in front of ongoing works"
+                            decoding="async" height="825" loading="lazy"
+                            src="https://images.unsplash.com/photo-1626885930974-4b69aa21bbf9?auto=format&amp;fit=crop&amp;w=1100&amp;h=825&amp;q=72"
+                            width="1100" />
+                    </div>
+                </div>
+                <div class="split__body reveal">
+                    <p class="eyebrow">Our story</p>
+                    <h2>Fifteen years of turning up before the concrete does.</h2>
+                    <p class="lede mt-5">SKK Consultants started with one machine and the jobs other contractors turned
+                        down —
+                        awkward access, poor ground, tight deadlines. Those jobs taught us to plan the sequence properly
+                        before
+                        anything moves.</p>
+                    <p class="mt-4 text-muted">The company grew outwards from earthworks rather than downwards from an
+                        office.
+                        We added surveying because setting out kept slipping. We added soil testing because foundations
+                        kept
+                        getting redesigned mid-build. We added the building division because clients asked us to finish
+                        what we
+                        had started. Every service line exists because a project needed it.</p>
+                    <p class="mt-4 text-muted">Today SKK runs residential, commercial and infrastructure work across the
+                        region,
+                        with an in-house plant fleet and a permanent engineering team. The scale has changed. The habit
+                        of
+                        arriving prepared has not.</p>
+                    <a class="btn btn--ghost mt-6" href="portfolio.html">See what we have built</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====================================================================== -->
+    <!-- MISSION & VISION                                                       -->
+    <!-- ====================================================================== -->
+    <section aria-labelledby="pillars-heading" class="section section--sunken">
+        <div class="wrap">
+            <h2 class="visually-hidden" id="pillars-heading">Mission and vision</h2>
+            <div class="pillar-grid reveal">
+                <article class="pillar">
+                    <img alt="Workers placing reinforcement and formwork on an upper floor slab" decoding="async"
+                        height="750" loading="lazy"
+                        src="https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?auto=format&amp;fit=crop&amp;w=900&amp;h=750&amp;q=72"
+                        width="900" />
+                    <div class="pillar__body">
+                        <p class="eyebrow eyebrow--light">Mission</p>
+                        <h2>Build work that still performs in twenty years.</h2>
+                        <p>To deliver construction and engineering that holds up under real use — correct levels, sound
+                            drainage,
+                            honest workmanship — while keeping clients informed enough to make good decisions along the
+                            way.</p>
+                    </div>
+                </article>
+                <article class="pillar">
+                    <img alt="Completed high-rise residential towers standing against a bright sky" decoding="async"
+                        height="750" loading="lazy"
+                        src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&amp;fit=crop&amp;w=900&amp;h=750&amp;q=72"
+                        width="900" />
+                    <div class="pillar__body">
+                        <p class="eyebrow eyebrow--light">Vision</p>
+                        <h2>The contractor clients call for the next phase.</h2>
+                        <p>To be the team developers and institutions come back to without tendering again, because the
+                            last
+                            project ran the way it was promised and the site was handed back clean.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- ====================================================================== -->
+    <!-- CORE VALUES                                                            -->
+    <!-- ====================================================================== -->
+    <section aria-labelledby="values-heading" class="section">
+        <div class="wrap">
+            <div class="section-head reveal">
+                <p class="eyebrow">What we hold to</p>
+                <h2 id="values-heading">Six values that show up in the work, not just the brochure.</h2>
+            </div>
+            <div class="values reveal">
+                <article class="value">
+                    <span class="value__icon"><svg aria-hidden="true" class="icon">
+                            <use href="#i-check"></use>
+                        </svg></span>
+                    <h3>Accuracy</h3>
+                    <p>Setting out is checked twice and recorded. Getting the levels right on day one is cheaper than
+                        any
+                        remedial work later.</p>
+                </article>
+                <article class="value">
+                    <span class="value__icon"><svg aria-hidden="true" class="icon">
+                            <use href="#i-shield"></use>
+                        </svg></span>
+                    <h3>Safety</h3>
+                    <p>Everyone goes home. Inductions, method statements and daily briefings are non-negotiable on every
+                        site we
+                        run.</p>
+                </article>
+                <article class="value">
+                    <span class="value__icon"><svg aria-hidden="true" class="icon">
+                            <use href="#i-clipboard"></use>
+                        </svg></span>
+                    <h3>Straight reporting</h3>
+                    <p>If the programme slips, the client hears it from us that week — with the recovery plan attached.
+                    </p>
+                </article>
+                <article class="value">
+                    <span class="value__icon"><svg aria-hidden="true" class="icon">
+                            <use href="#i-tool"></use>
+                        </svg></span>
+                    <h3>Craft</h3>
+                    <p>Straight kerb lines, clean concrete faces, tidy joints. The details people notice are the ones we
+                        get
+                        right.</p>
+                </article>
+                <article class="value">
+                    <span class="value__icon"><svg aria-hidden="true" class="icon">
+                            <use href="#i-team"></use>
+                        </svg></span>
+                    <h3>Continuity</h3>
+                    <p>The same site agent from mobilisation to handover. Clients should never have to explain the
+                        project
+                        twice.</p>
+                </article>
+                <article class="value">
+                    <span class="value__icon"><svg aria-hidden="true" class="icon">
+                            <use href="#i-leaf"></use>
+                        </svg></span>
+                    <h3>Care for the ground</h3>
+                    <p>Spoil reused where it can be, runoff controlled, and the surroundings left in a state we would
+                        accept
+                        ourselves.</p>
+                </article>
+            </div>
+            <div class="value-strip reveal">
+                <div class="frame frame--square">
+                    <img alt="Operative using a power tool while fixing steel reinforcement on site" decoding="async"
+                        height="500" loading="lazy"
+                        src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&amp;fit=crop&amp;w=500&amp;h=500&amp;q=70"
+                        width="500" />
+                </div>
+                <div class="frame frame--square">
+                    <img alt="Engineer measuring a technical drawing with a caliper at a work desk" decoding="async"
+                        height="500" loading="lazy"
+                        src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&amp;fit=crop&amp;w=500&amp;h=500&amp;q=70"
+                        width="500" />
+                </div>
+                <div class="frame frame--square">
+                    <img alt="Red safety helmet set down on a paved surface at the edge of a work area" decoding="async"
+                        height="500" loading="lazy"
+                        src="https://images.unsplash.com/photo-1567954970774-58d6aa6c50dc?auto=format&amp;fit=crop&amp;w=500&amp;h=500&amp;q=70"
+                        width="500" />
+                </div>
+                <div class="frame frame--square">
+                    <img alt="Excavator regrading a hillside embankment under a clear sky" decoding="async" height="500"
+                        loading="lazy"
+                        src="https://images.unsplash.com/photo-1649807479468-40011b31ee09?auto=format&amp;fit=crop&amp;w=500&amp;h=500&amp;q=70"
+                        width="500" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====================================================================== -->
+    <!-- TIMELINE                                                               -->
+    <!-- ====================================================================== -->
+    <section aria-labelledby="timeline-heading" class="section section--dark">
+        <div class="wrap">
+            <div class="section-head reveal">
+                <p class="eyebrow eyebrow--light">How we got here</p>
+                <h2 id="timeline-heading">Milestones.</h2>
+            </div>
+            <div class="timeline reveal">
+                <article class="milestone">
+                    <p class="milestone__year">2011</p>
+                    <div>
+                        <h3>One machine, one crew</h3>
+                        <p>SKK opens as a site clearance and earthworks subcontractor working on residential plots.</p>
+                    </div>
+                    <div class="frame frame--wide">
+                        <img alt="Bulldozer pushing material across a cleared plot of bare earth" decoding="async"
+                            height="394" loading="lazy"
+                            src="https://images.unsplash.com/photo-1652303713917-2666b8bee507?auto=format&amp;fit=crop&amp;w=700&amp;h=394&amp;q=70"
+                            width="700" />
+                    </div>
+                </article>
+                <article class="milestone">
+                    <p class="milestone__year">2014</p>
+                    <div>
+                        <h3>Surveying brought in-house</h3>
+                        <p>A permanent survey team joins after one too many setting-out disputes with third parties.</p>
+                    </div>
+                    <div class="frame frame--wide">
+                        <img alt="Two engineers in uniform pointing at a printed site plan spread across a table"
+                            decoding="async" height="394" loading="lazy"
+                            src="https://images.unsplash.com/photo-1581094488379-6a10d04c0f04?auto=format&amp;fit=crop&amp;w=700&amp;h=394&amp;q=70"
+                            width="700" />
+                    </div>
+                </article>
+                <article class="milestone">
+                    <p class="milestone__year">2017</p>
+                    <div>
+                        <h3>First road and drainage package</h3>
+                        <p>SKK takes on estate roads, storm channels and culverts as a single civils contract.</p>
+                    </div>
+                    <div class="frame frame--wide">
+                        <img alt="Heavy grading machine shaping the formation of a new road" decoding="async"
+                            height="394" loading="lazy"
+                            src="https://images.unsplash.com/photo-1591486085897-f433f05e7aed?auto=format&amp;fit=crop&amp;w=700&amp;h=394&amp;q=70"
+                            width="700" />
+                    </div>
+                </article>
+                <article class="milestone">
+                    <p class="milestone__year">2020</p>
+                    <div>
+                        <h3>Building division opens</h3>
+                        <p>Structural works, blockwork and finishes are added so schemes can run under one contract.</p>
+                    </div>
+                    <div class="frame frame--wide">
+                        <img alt="Construction worker crossing the steel frame of a new building at height"
+                            decoding="async" height="394" loading="lazy"
+                            src="https://images.unsplash.com/photo-1587582423116-ec07293f0395?auto=format&amp;fit=crop&amp;w=700&amp;h=394&amp;q=70"
+                            width="700" />
+                    </div>
+                </article>
+                <article class="milestone">
+                    <p class="milestone__year">2023</p>
+                    <div>
+                        <h3>Plant fleet doubles</h3>
+                        <p>Owned excavators, rollers and haulage remove the dependency on hire availability.</p>
+                    </div>
+                    <div class="frame frame--wide">
+                        <img alt="Row of construction machines parked and ready in a site compound" decoding="async"
+                            height="394" loading="lazy"
+                            src="https://images.unsplash.com/photo-1642927778267-4e8b787b325a?auto=format&amp;fit=crop&amp;w=700&amp;h=394&amp;q=70"
+                            width="700" />
+                    </div>
+                </article>
+                <article class="milestone">
+                    <p class="milestone__year">Today</p>
+                    <div>
+                        <h3>Twelve service lines, one contract</h3>
+                        <p>Site investigation through to landscaping, delivered by a team of over forty professionals.
+                        </p>
+                    </div>
+                    <div class="frame frame--wide">
+                        <img alt="Tower crane lifting materials over a partly completed multi-storey building"
+                            decoding="async" height="394" loading="lazy"
+                            src="https://images.unsplash.com/photo-1599707254554-027aeb4deacd?auto=format&amp;fit=crop&amp;w=700&amp;h=394&amp;q=70"
+                            width="700" />
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- ====================================================================== -->
+    <!-- TEAM                                                                   -->
+    <!-- ====================================================================== -->
+    <section aria-labelledby="team-heading" class="section">
+        <div class="wrap">
+            <div class="section-head reveal">
+                <p class="eyebrow">The people on site</p>
+                <h2 id="team-heading">Four disciplines, one site team.</h2>
+                <p>Numbers below describe the make-up of a typical SKK project team rather than named individuals.</p>
+            </div>
+            <div class="team reveal">
+                <article class="team__card">
+                    <div class="frame frame--landscape">
+                        <img alt="Group of construction workers in hard hats gathered on a levelled site"
+                            decoding="async" height="450" loading="lazy"
+                            src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&amp;fit=crop&amp;w=600&amp;h=450&amp;q=70"
+                            width="600" />
+                    </div>
+                    <div class="team__body">
+                        <span class="team__count">18</span>
+                        <h3>Site operatives</h3>
+                        <p>Steel fixers, masons, machine operators and general crew who do the physical build.</p>
+                    </div>
+                </article>
+                <article class="team__card">
+                    <div class="frame frame--landscape">
+                        <img alt="Two engineers reviewing architectural drawings alongside a laptop" decoding="async"
+                            height="450" loading="lazy"
+                            src="https://images.unsplash.com/photo-1581092583537-20d51b4b4f1b?auto=format&amp;fit=crop&amp;w=600&amp;h=450&amp;q=70"
+                            width="600" />
+                    </div>
+                    <div class="team__body">
+                        <span class="team__count">9</span>
+                        <h3>Engineers</h3>
+                        <p>Structural and civil engineers checking design intent against what the ground actually
+                            allows.</p>
+                    </div>
+                </article>
+                <article class="team__card">
+                    <div class="frame frame--landscape">
+                        <img alt="Two site staff walking a new road alignment to check the works" decoding="async"
+                            height="450" loading="lazy"
+                            src="https://images.unsplash.com/photo-1693019108329-1889fb170f2e?auto=format&amp;fit=crop&amp;w=600&amp;h=450&amp;q=70"
+                            width="600" />
+                    </div>
+                    <div class="team__body">
+                        <span class="team__count">6</span>
+                        <h3>Surveyors</h3>
+                        <p>Topographic survey, setting out, level control and as-built records for every package.</p>
+                    </div>
+                </article>
+                <article class="team__card">
+                    <div class="frame frame--landscape">
+                        <img alt="Two construction professionals conferring next to active works" decoding="async"
+                            height="450" loading="lazy"
+                            src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&amp;fit=crop&amp;w=600&amp;h=450&amp;q=70"
+                            width="600" />
+                    </div>
+                    <div class="team__body">
+                        <span class="team__count">7</span>
+                        <h3>Site management</h3>
+                        <p>Agents, foremen and planners holding the programme, procurement and subcontractors together.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- ====================================================================== -->
+    <!-- SAFETY & ENVIRONMENT                                                   -->
+    <!-- ====================================================================== -->
+    <section class="section section--sunken" id="safety">
+        <div class="wrap">
+            <div class="feature-pair">
+                <article class="reveal">
+                    <div class="frame frame--wide">
+                        <img alt="Construction crew working on into the evening under a low sun on an open site"
+                            decoding="async" height="506" loading="lazy"
+                            src="https://images.unsplash.com/photo-1579847188804-ecba0e2ea330?auto=format&amp;fit=crop&amp;w=900&amp;h=506&amp;q=72"
+                            width="900" />
+                    </div>
+                    <p class="eyebrow mt-6">Safety &amp; quality</p>
+                    <h2>Nobody signs off work they have not seen.</h2>
+                    <p class="mt-4 text-muted">Every package has a hold point. Reinforcement is inspected before the
+                        pour,
+                        compaction is tested before the sub-base goes down, and drainage is run and checked before it
+                        gets
+                        covered. The inspection record travels with the handover pack.</p>
+                    <ul class="ticks mt-5">
+                        <li><svg aria-hidden="true" class="icon">
+                                <use href="#i-check"></use>
+                            </svg>Site induction for every worker and visitor</li>
+                        <li><svg aria-hidden="true" class="icon">
+                                <use href="#i-check"></use>
+                            </svg>Method statements and risk assessments per activity</li>
+                        <li><svg aria-hidden="true" class="icon">
+                                <use href="#i-check"></use>
+                            </svg>Documented hold points before covered work proceeds</li>
+                        <li><svg aria-hidden="true" class="icon">
+                                <use href="#i-check"></use>
+                            </svg>Materials testing records retained through to handover</li>
+                    </ul>
+                </article>
+                <article class="reveal">
+                    <div class="frame frame--wide">
+                        <img alt="Excavator working carefully alongside a watercourse at the edge of a site"
+                            decoding="async" height="506" loading="lazy"
+                            src="https://images.unsplash.com/photo-1628645419184-26a1f2757340?auto=format&amp;fit=crop&amp;w=900&amp;h=506&amp;q=72"
+                            width="900" />
+                    </div>
+                    <p class="eyebrow mt-6">Environmental responsibility</p>
+                    <h2>Ground gets disturbed once, and put back properly.</h2>
+                    <p class="mt-4 text-muted">Earthworks generate the largest environmental footprint on most projects,
+                        so that
+                        is where we concentrate. Cut is balanced against fill to reduce haulage, topsoil is stripped and
+                        stockpiled for reuse, and silt controls go in before the first machine tracks onto site.</p>
+                    <ul class="ticks mt-5">
+                        <li><svg aria-hidden="true" class="icon">
+                                <use href="#i-check"></use>
+                            </svg>Cut-and-fill balance planned to cut off-site haulage</li>
+                        <li><svg aria-hidden="true" class="icon">
+                                <use href="#i-check"></use>
+                            </svg>Topsoil stripped, stored and reused in landscaping</li>
+                        <li><svg aria-hidden="true" class="icon">
+                                <use href="#i-check"></use>
+                            </svg>Silt traps and runoff control from day one</li>
+                        <li><svg aria-hidden="true" class="icon">
+                                <use href="#i-check"></use>
+                            </svg>Dust suppression on haul routes during dry works</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- ====================================================================== -->
+    <!-- CTA                                                                    -->
+    <!-- ====================================================================== -->
+    <section class="cta-band">
+        <img alt="Cranes rising above a cluster of buildings under construction across a city skyline"
+            class="cta-band__img" decoding="async" height="800" loading="lazy"
+            src="https://images.unsplash.com/photo-1485083269755-a7b559a4fe5e?auto=format&amp;fit=crop&amp;w=1800&amp;h=800&amp;q=70"
+            width="1800" />
+        <div class="wrap">
+            <div class="cta-band__inner">
+                <div>
+                    <h2>Want to work with this team?</h2>
+                    <p>Tell us about the site and the programme. We will tell you honestly whether we are the right
+                        contractor
+                        for it.</p>
+                </div>
+                <div class="cta-band__actions">
+                    <a class="btn btn--primary" href="contact.html">Start a conversation</a>
+                    <a class="btn btn--light" href="services.html">Browse services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}

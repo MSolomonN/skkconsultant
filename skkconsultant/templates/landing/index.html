@@ -1,1 +1,937 @@
 {% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Construction, Civil Engineering &amp; Property Development
+{% endblock %}
+
+{% block style %}
+<link href="{% static 'css/index.css' %}" rel="stylesheet" />
+{% endblock %}
+
+{% block content %}
+<main id="main">
+    <!-- ====================================================================== -->
+    <!-- HERO SLIDER                                                            -->
+    <!-- ====================================================================== -->
+    <section aria-label="SKK Consultants project highlights" aria-roledescription="carousel" class="hero"
+        data-delay="6500" data-hero="">
+        <div class="hero__track">
+            <div aria-label="1 of 5" aria-roledescription="slide" class="hero__slide is-active" role="group">
+                <img alt="Reinforced concrete frame of a multi-storey building under construction against an overcast sky"
+                    decoding="async" fetchpriority="high" height="1080" sizes="100vw"
+                    src="https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?auto=format&amp;fit=crop&amp;w=1920&amp;h=1080&amp;q=72"
+                    srcset="https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?auto=format&amp;fit=crop&amp;w=900&amp;h=1200&amp;q=70 900w,
+                   https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?auto=format&amp;fit=crop&amp;w=1920&amp;h=1080&amp;q=72 1920w"
+                    width="1920" />
+            </div>
+            <div aria-label="2 of 5" aria-roledescription="slide" class="hero__slide" role="group">
+                <img alt="Tracked excavator lifting a bucket of earth on an open construction site" decoding="async"
+                    height="1080" loading="lazy"
+                    src="https://images.unsplash.com/photo-1503708928676-1cb796a0891e?auto=format&amp;fit=crop&amp;w=1920&amp;h=1080&amp;q=72"
+                    width="1920" />
+            </div>
+            <div aria-label="3 of 5" aria-roledescription="slide" class="hero__slide" role="group">
+                <img alt="Aerial view of a multi-lane road interchange carrying traffic between two carriageways"
+                    decoding="async" height="1080" loading="lazy"
+                    src="https://images.unsplash.com/photo-1507415710579-79b32edf8a78?auto=format&amp;fit=crop&amp;w=1920&amp;h=1080&amp;q=72"
+                    width="1920" />
+            </div>
+            <div aria-label="4 of 5" aria-roledescription="slide" class="hero__slide" role="group">
+                <img alt="Cluster of completed high-rise residential towers photographed from street level"
+                    decoding="async" height="1080" loading="lazy"
+                    src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&amp;fit=crop&amp;w=1920&amp;h=1080&amp;q=72"
+                    width="1920" />
+            </div>
+            <div aria-label="5 of 5" aria-roledescription="slide" class="hero__slide" role="group">
+                <img alt="Team of construction workers in hard hats and high-visibility vests standing on a levelled site"
+                    decoding="async" height="1080" loading="lazy"
+                    src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&amp;fit=crop&amp;w=1920&amp;h=1080&amp;q=72"
+                    width="1920" />
+            </div>
+        </div>
+        <div aria-hidden="true" class="hero__scrim"></div>
+        <div class="hero__content wrap">
+            <div class="hero__copy">
+                <p class="hero__caption is-active" data-hero-caption="">Building construction</p>
+                <p class="hero__caption" data-hero-caption="">Excavation &amp; earthworks</p>
+                <p class="hero__caption" data-hero-caption="">Roads &amp; infrastructure</p>
+                <p class="hero__caption" data-hero-caption="">Property development</p>
+                <p class="hero__caption" data-hero-caption="">Engineering teams</p>
+                <h1 class="hero__title is-active" data-hero-title="">Building what matters.</h1>
+                <p class="hero__title" data-hero-title="">From groundwork to completion.</p>
+                <p class="hero__title" data-hero-title="">Infrastructure that moves communities forward.</p>
+                <p class="hero__title" data-hero-title="">Turning development plans into reality.</p>
+                <p class="hero__title" data-hero-title="">Precision at every stage.</p>
+                <p class="hero__sub is-active" data-hero-sub="">Construction, engineering and development solutions
+                    built around quality, precision and lasting value.</p>
+                <p class="hero__sub" data-hero-sub="">Excavation, earthworks and site preparation handled with the
+                    right plant and the right crew.</p>
+                <p class="hero__sub" data-hero-sub="">Roads, drainage and civil works engineered to carry real
+                    traffic for decades.</p>
+                <p class="hero__sub" data-hero-sub="">Residential and commercial developments taken from raw land to
+                    handover.</p>
+                <p class="hero__sub" data-hero-sub="">Surveying, testing and supervision that keep a build accurate
+                    from setting out onwards.</p>
+                <div class="hero__actions">
+                    <a class="btn btn--primary" href="contact.html">Request a quote</a>
+                    <a class="btn btn--light" href="portfolio.html">See our work</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero__bar">
+            <div class="hero__bar-inner">
+                <p class="hero__count"><b data-hero-current="">01</b> / <span data-hero-total="">05</span></p>
+                <div aria-label="Choose a slide" class="hero__dots" role="tablist">
+                    <button aria-label="Building construction" aria-selected="true" class="hero__dot is-active"
+                        role="tab" type="button"></button>
+                    <button aria-label="Excavation and earthworks" aria-selected="false" class="hero__dot" role="tab"
+                        tabindex="-1" type="button"></button>
+                    <button aria-label="Roads and infrastructure" aria-selected="false" class="hero__dot" role="tab"
+                        tabindex="-1" type="button"></button>
+                    <button aria-label="Property development" aria-selected="false" class="hero__dot" role="tab"
+                        tabindex="-1" type="button"></button>
+                    <button aria-label="Engineering teams" aria-selected="false" class="hero__dot" role="tab"
+                        tabindex="-1" type="button"></button>
+                </div>
+                <div class="hero__arrows">
+                    <button aria-label="Previous slide" class="hero__arrow" data-hero-prev="" type="button">
+                        <svg aria-hidden="true" class="icon">
+                            <use href="#i-arrow-left"></use>
+                        </svg>
+                    </button>
+                    <button aria-label="Next slide" class="hero__arrow" data-hero-next="" type="button">
+                        <svg aria-hidden="true" class="icon">
+                            <use href="#i-arrow-right"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <p aria-live="polite" class="visually-hidden" data-hero-live=""></p>
+    </section>
+    <!-- ====================================================================== -->
+    <!-- TRUST STATISTICS                                                       -->
+    <!-- ====================================================================== -->
+    <section aria-label="Company at a glance" class="stats">
+        <img alt="" class="stats__bg" decoding="async" height="600" loading="lazy"
+            src="https://images.unsplash.com/photo-1599995903128-531fc7fb694b?auto=format&amp;fit=crop&amp;w=1800&amp;h=600&amp;q=60"
+            width="1800" />
+        <div class="stats__inner wrap">
+            <div class="stat">
+                <p class="stat__num" data-count="15" data-suffix="+">15<span>+</span></p>
+                <p class="stat__label">Years in the field</p>
+            </div>
+            <div class="stat">
+                <p class="stat__num" data-count="250" data-suffix="+">250<span>+</span></p>
+                <p class="stat__label">Projects delivered</p>
+            </div>
+            <div class="stat">
+                <p class="stat__num" data-count="100" data-suffix="+">100<span>+</span></p>
+                <p class="stat__label">Clients served</p>
+            </div>
+            <div class="stat">
+                <p class="stat__num" data-count="40" data-suffix="+">40<span>+</span></p>
+                <p class="stat__label">Professionals on staff</p>
+            </div>
+        </div>
+    </section>
+    <!-- ====================================================================== -->
+    <!-- INTRODUCTION                                                           -->
+    <!-- ====================================================================== -->
+    <section class="section intro">
+        <div class="wrap">
+            <div class="intro__grid">
+                <div class="intro__media reveal">
+                    <div class="frame frame--landscape">
+                        <img alt="Workers placing formwork on the upper floor slab of a building under construction"
+                            decoding="async" height="825" loading="lazy"
+                            src="https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?auto=format&amp;fit=crop&amp;w=1100&amp;h=825&amp;q=72"
+                            width="1100" />
+                    </div>
+                    <div class="frame frame--square intro__inset">
+                        <img alt="Site operative in a high-visibility vest and helmet using a power tool on a steel fixing"
+                            decoding="async" height="600" loading="lazy"
+                            src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&amp;fit=crop&amp;w=600&amp;h=600&amp;q=72"
+                            width="600" />
+                    </div>
+                </div>
+                <div class="intro__body reveal">
+                    <p class="eyebrow">Who we are</p>
+                    <h2>A contractor that stays on site from the first survey to the final handover.</h2>
+                    <p class="lede mt-5">SKK Consultants brings construction, engineering and development work under
+                        a single team. We set out the site, move the ground, build the structure and finish the
+                        surfaces — so the sequence never breaks down between separate contractors.</p>
+                    <ul class="ticks ticks--2 mt-6">
+                        <li><svg aria-hidden="true" class="icon">
+                                <use href="#i-check"></use>
+                            </svg>Construction expertise across residential, commercial and institutional builds
+                        </li>
+                        <li><svg aria-hidden="true" class="icon">
+                                <use href="#i-check"></use>
+                            </svg>Civil engineering capability for roads, drainage and structures</li>
+                        <li><svg aria-hidden="true" class="icon">
+                                <use href="#i-check"></use>
+                            </svg>Quality control written into every stage, not inspected in at the end</li>
+                        <li><svg aria-hidden="true" class="icon">
+                                <use href="#i-check"></use>
+                            </svg>Project management that holds programme, cost and scope together</li>
+                    </ul>
+                    <div class="intro__signature">
+                        <div class="intro__stat"><b>15+</b><span>Years operating</span></div>
+                        <div class="intro__stat"><b>12</b><span>Service lines</span></div>
+                        <a class="link-arrow" href="about.html">
+                            Discover SKK Consultants
+                            <svg aria-hidden="true" class="icon">
+                                <use href="#i-arrow-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====================================================================== -->
+    <!-- SERVICES IMAGE GRID                                                    -->
+    <!-- ====================================================================== -->
+    <section aria-labelledby="services-heading" class="section section--sunken">
+        <div class="wrap">
+            <div class="services-head reveal">
+                <div class="section-head">
+                    <p class="eyebrow">What we do</p>
+                    <h2 id="services-heading">Twelve service lines, one accountable team.</h2>
+                </div>
+                <a class="link-arrow" href="services.html">
+                    All services
+                    <svg aria-hidden="true" class="icon">
+                        <use href="#i-arrow-right"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="wrap">
+            <div class="service-grid reveal">
+                <a class="service-card" href="services.html#real-estate">
+                    <img alt="Tower cranes standing over the top floors of a building development at dusk"
+                        decoding="async" height="595" loading="lazy"
+                        src="https://images.unsplash.com/photo-1429497419816-9ca5cfb4571a?auto=format&amp;fit=crop&amp;w=700&amp;h=595&amp;q=70"
+                        width="700" />
+                    <div class="service-card__body">
+                        <div>
+                            <h3 class="service-card__title">Real estate development</h3>
+                            <p class="service-card__desc">Land acquisition support, feasibility, construction and
+                                delivery of residential and commercial schemes.</p>
+                        </div>
+                        <span aria-hidden="true" class="service-card__go"><svg class="icon">
+                                <use href="#i-arrow-right"></use>
+                            </svg></span>
+                    </div>
+                </a>
+                <a class="service-card" href="services.html#building">
+                    <img alt="Construction worker in a hard hat walking across the steel frame of a new building"
+                        decoding="async" height="595" loading="lazy"
+                        src="https://images.unsplash.com/photo-1587582423116-ec07293f0395?auto=format&amp;fit=crop&amp;w=700&amp;h=595&amp;q=70"
+                        width="700" />
+                    <div class="service-card__body">
+                        <div>
+                            <h3 class="service-card__title">Building construction</h3>
+                            <p class="service-card__desc">Foundations, reinforced concrete frames, blockwork and
+                                finishes to specification.</p>
+                        </div>
+                        <span aria-hidden="true" class="service-card__go"><svg class="icon">
+                                <use href="#i-arrow-right"></use>
+                            </svg></span>
+                    </div>
+                </a>
+                <a class="service-card" href="services.html#paving">
+                    <img alt="Excavator working along a concrete roadway during a surfacing operation" decoding="async"
+                        height="595" loading="lazy"
+                        src="https://images.unsplash.com/photo-1610477865545-37711c53144d?auto=format&amp;fit=crop&amp;w=700&amp;h=595&amp;q=70"
+                        width="700" />
+                    <div class="service-card__body">
+                        <div>
+                            <h3 class="service-card__title">Cabro &amp; paving</h3>
+                            <p class="service-card__desc">Interlocking blocks, kerbs and edging for driveways,
+                                walkways and parking yards.</p>
+                        </div>
+                        <span aria-hidden="true" class="service-card__go"><svg class="icon">
+                                <use href="#i-arrow-right"></use>
+                            </svg></span>
+                    </div>
+                </a>
+                <a class="service-card" href="services.html#excavation">
+                    <img alt="Yellow tracked excavator digging into rocky ground on a cleared site" decoding="async"
+                        height="595" loading="lazy"
+                        src="https://images.unsplash.com/photo-1580901369227-308f6f40bdeb?auto=format&amp;fit=crop&amp;w=700&amp;h=595&amp;q=70"
+                        width="700" />
+                    <div class="service-card__body">
+                        <div>
+                            <h3 class="service-card__title">Excavation</h3>
+                            <p class="service-card__desc">Bulk earthworks, trenching, cut and fill, and site
+                                clearance with our own plant.</p>
+                        </div>
+                        <span aria-hidden="true" class="service-card__go"><svg class="icon">
+                                <use href="#i-arrow-right"></use>
+                            </svg></span>
+                    </div>
+                </a>
+                <a class="service-card" href="services.html#surveying">
+                    <img alt="Two site engineers standing on a new road alignment reviewing the works ahead of them"
+                        decoding="async" height="595" loading="lazy"
+                        src="https://images.unsplash.com/photo-1693019108329-1889fb170f2e?auto=format&amp;fit=crop&amp;w=700&amp;h=595&amp;q=70"
+                        width="700" />
+                    <div class="service-card__body">
+                        <div>
+                            <h3 class="service-card__title">Site surveying</h3>
+                            <p class="service-card__desc">Topographic survey, setting out, level control and
+                                as-built records.</p>
+                        </div>
+                        <span aria-hidden="true" class="service-card__go"><svg class="icon">
+                                <use href="#i-arrow-right"></use>
+                            </svg></span>
+                    </div>
+                </a>
+                <a class="service-card" href="services.html#soil">
+                    <img alt="Excavator bucket breaking into exposed brown subsoil during ground investigation works"
+                        decoding="async" height="595" loading="lazy"
+                        src="https://images.unsplash.com/photo-1622082679766-c5912d9416eb?auto=format&amp;fit=crop&amp;w=700&amp;h=595&amp;q=70"
+                        width="700" />
+                    <div class="service-card__body">
+                        <div>
+                            <h3 class="service-card__title">Soil testing</h3>
+                            <p class="service-card__desc">Trial pits, sampling and bearing capacity assessment
+                                before foundations are designed.</p>
+                        </div>
+                        <span aria-hidden="true" class="service-card__go"><svg class="icon">
+                                <use href="#i-arrow-right"></use>
+                            </svg></span>
+                    </div>
+                </a>
+                <a class="service-card" href="services.html#civil">
+                    <img alt="Aerial view of heavy plant loading a dump truck on a civil engineering site"
+                        decoding="async" height="595" loading="lazy"
+                        src="https://images.unsplash.com/photo-1534097575056-ddba81f714c8?auto=format&amp;fit=crop&amp;w=700&amp;h=595&amp;q=70"
+                        width="700" />
+                    <div class="service-card__body">
+                        <div>
+                            <h3 class="service-card__title">Civil engineering</h3>
+                            <p class="service-card__desc">Structures, retaining works, culverts and the
+                                infrastructure that ties a site together.</p>
+                        </div>
+                        <span aria-hidden="true" class="service-card__go"><svg class="icon">
+                                <use href="#i-arrow-right"></use>
+                            </svg></span>
+                    </div>
+                </a>
+                <a class="service-card" href="services.html#roads">
+                    <img alt="Heavy grading machine working along an unfinished road formation" decoding="async"
+                        height="595" loading="lazy"
+                        src="https://images.unsplash.com/photo-1591486085897-f433f05e7aed?auto=format&amp;fit=crop&amp;w=700&amp;h=595&amp;q=70"
+                        width="700" />
+                    <div class="service-card__body">
+                        <div>
+                            <h3 class="service-card__title">Road construction</h3>
+                            <p class="service-card__desc">Formation, sub-base, base course and surfacing for access
+                                roads and estate roads.</p>
+                        </div>
+                        <span aria-hidden="true" class="service-card__go"><svg class="icon">
+                                <use href="#i-arrow-right"></use>
+                            </svg></span>
+                    </div>
+                </a>
+                <a class="service-card" href="services.html#drainage">
+                    <img alt="Excavator loading spoil from an open trench into a waiting dump truck" decoding="async"
+                        height="595" loading="lazy"
+                        src="https://images.unsplash.com/photo-1575281923032-f40d94ef6160?auto=format&amp;fit=crop&amp;w=700&amp;h=595&amp;q=70"
+                        width="700" />
+                    <div class="service-card__body">
+                        <div>
+                            <h3 class="service-card__title">Drainage</h3>
+                            <p class="service-card__desc">Storm channels, culverts, manholes and sub-soil drainage
+                                that actually clears water.</p>
+                        </div>
+                        <span aria-hidden="true" class="service-card__go"><svg class="icon">
+                                <use href="#i-arrow-right"></use>
+                            </svg></span>
+                    </div>
+                </a>
+                <a class="service-card" href="services.html#structural">
+                    <img alt="Grey tower crane photographed from below against the frame of a rising building"
+                        decoding="async" height="595" loading="lazy"
+                        src="https://images.unsplash.com/photo-1535732759880-bbd5c7265e3f?auto=format&amp;fit=crop&amp;w=700&amp;h=595&amp;q=70"
+                        width="700" />
+                    <div class="service-card__body">
+                        <div>
+                            <h3 class="service-card__title">Structural works</h3>
+                            <p class="service-card__desc">Reinforcement, formwork, concrete placement and structural
+                                steel erection.</p>
+                        </div>
+                        <span aria-hidden="true" class="service-card__go"><svg class="icon">
+                                <use href="#i-arrow-right"></use>
+                            </svg></span>
+                    </div>
+                </a>
+                <a class="service-card" href="services.html#management">
+                    <img alt="Two construction professionals conferring beside ongoing works on site" decoding="async"
+                        height="595" loading="lazy"
+                        src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&amp;fit=crop&amp;w=700&amp;h=595&amp;q=70"
+                        width="700" />
+                    <div class="service-card__body">
+                        <div>
+                            <h3 class="service-card__title">Project management</h3>
+                            <p class="service-card__desc">Programme, procurement, subcontractor coordination and
+                                progress reporting.</p>
+                        </div>
+                        <span aria-hidden="true" class="service-card__go"><svg class="icon">
+                                <use href="#i-arrow-right"></use>
+                            </svg></span>
+                    </div>
+                </a>
+                <a class="service-card" href="services.html#landscaping">
+                    <img alt="Excavator shaping a landscaped embankment on a hillside under a clear sky"
+                        decoding="async" height="595" loading="lazy"
+                        src="https://images.unsplash.com/photo-1649807479468-40011b31ee09?auto=format&amp;fit=crop&amp;w=700&amp;h=595&amp;q=70"
+                        width="700" />
+                    <div class="service-card__body">
+                        <div>
+                            <h3 class="service-card__title">Landscaping</h3>
+                            <p class="service-card__desc">Grading, retaining, planting beds and external works that
+                                finish a property properly.</p>
+                        </div>
+                        <span aria-hidden="true" class="service-card__go"><svg class="icon">
+                                <use href="#i-arrow-right"></use>
+                            </svg></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- ====================================================================== -->
+    <!-- WHY SKK                                                                -->
+    <!-- ====================================================================== -->
+    <section aria-labelledby="why-heading" class="section section--dark">
+        <div class="wrap">
+            <div class="why__grid">
+                <div class="why__media reveal">
+                    <img alt="Construction crew silhouetted against a low sun while finishing work on an open site"
+                        decoding="async" height="1150" loading="lazy"
+                        src="https://images.unsplash.com/photo-1579847188804-ecba0e2ea330?auto=format&amp;fit=crop&amp;w=900&amp;h=1150&amp;q=72"
+                        width="900" />
+                    <p class="why__badge"><b>Crews that finish the day's pour</b><span>Sequencing and supervision
+                            planned before the concrete arrives.</span></p>
+                </div>
+                <div class="why__body reveal">
+                    <p class="eyebrow eyebrow--light">Why SKK</p>
+                    <h2 id="why-heading">Six reasons clients keep the same contractor for the next phase.</h2>
+                    <div class="benefits mt-6">
+                        <div class="benefit">
+                            <span class="benefit__icon"><svg aria-hidden="true" class="icon">
+                                    <use href="#i-check"></use>
+                                </svg></span>
+                            <div>
+                                <h3>Quality first</h3>
+                                <p>High standards held from planning through to completion, with checks at each
+                                    stage rather than a scramble at handover.</p>
+                            </div>
+                        </div>
+                        <div class="benefit">
+                            <span class="benefit__icon"><svg aria-hidden="true" class="icon">
+                                    <use href="#i-team"></use>
+                                </svg></span>
+                            <div>
+                                <h3>Experienced professionals</h3>
+                                <p>Skilled teams used to complex sites, tight boundaries and demanding programmes.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="benefit">
+                            <span class="benefit__icon"><svg aria-hidden="true" class="icon">
+                                    <use href="#i-tool"></use>
+                                </svg></span>
+                            <div>
+                                <h3>Modern equipment</h3>
+                                <p>Owned plant and tooling, so mobilisation doesn't wait on a third-party hire
+                                    schedule.</p>
+                            </div>
+                        </div>
+                        <div class="benefit">
+                            <span class="benefit__icon"><svg aria-hidden="true" class="icon">
+                                    <use href="#i-clipboard"></use>
+                                </svg></span>
+                            <div>
+                                <h3>Reliable delivery</h3>
+                                <p>Programmes built from real production rates, then tracked weekly against actual
+                                    progress.</p>
+                            </div>
+                        </div>
+                        <div class="benefit">
+                            <span class="benefit__icon"><svg aria-hidden="true" class="icon">
+                                    <use href="#i-shield"></use>
+                                </svg></span>
+                            <div>
+                                <h3>Safety focus</h3>
+                                <p>Method statements, inductions and daily briefings as standard practice on every
+                                    site.</p>
+                            </div>
+                        </div>
+                        <div class="benefit">
+                            <span class="benefit__icon"><svg aria-hidden="true" class="icon">
+                                    <use href="#i-layers"></use>
+                                </svg></span>
+                            <div>
+                                <h3>End-to-end capability</h3>
+                                <p>Site investigation, preparation, construction and completion under one contract.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====================================================================== -->
+    <!-- FEATURED PROJECTS                                                      -->
+    <!-- ====================================================================== -->
+    <section aria-labelledby="featured-heading" class="section">
+        <div class="wrap">
+            <div class="services-head reveal">
+                <div class="section-head">
+                    <p class="eyebrow">Selected work</p>
+                    <h2 id="featured-heading">Representative projects across our disciplines.</h2>
+                </div>
+                <a class="link-arrow" href="portfolio.html">
+                    Full portfolio
+                    <svg aria-hidden="true" class="icon">
+                        <use href="#i-arrow-right"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="projects reveal">
+                <a class="project project--hero" href="portfolio.html">
+                    <img alt="Yellow tower crane lifting materials beside a partly clad multi-storey building"
+                        decoding="async" height="900" loading="lazy"
+                        src="https://images.unsplash.com/photo-1599707254554-027aeb4deacd?auto=format&amp;fit=crop&amp;w=1100&amp;h=900&amp;q=72"
+                        width="1100" />
+                    <div class="project__body">
+                        <span class="project__cat">Building construction</span>
+                        <h3 class="project__title">Mixed-use development, phase two</h3>
+                        <p class="project__desc">Reinforced concrete frame, external envelope and service risers
+                            delivered over a live phased programme.</p>
+                        <span class="project__go">View project <svg aria-hidden="true" class="icon">
+                                <use href="#i-arrow-right"></use>
+                            </svg></span>
+                    </div>
+                </a>
+                <a class="project project--tall" href="portfolio.html">
+                    <img alt="Row of yellow and blue construction machines lined up ready for work on a site compound"
+                        decoding="async" height="900" loading="lazy"
+                        src="https://images.unsplash.com/photo-1642927778267-4e8b787b325a?auto=format&amp;fit=crop&amp;w=600&amp;h=900&amp;q=72"
+                        width="600" />
+                    <div class="project__body">
+                        <span class="project__cat">Excavation</span>
+                        <h3 class="project__title">Bulk earthworks mobilisation</h3>
+                        <span class="project__go">View project <svg aria-hidden="true" class="icon">
+                                <use href="#i-arrow-right"></use>
+                            </svg></span>
+                    </div>
+                </a>
+                <a class="project" href="portfolio.html">
+                    <img alt="Two excavators working a wide cut face on a large earthmoving operation" decoding="async"
+                        height="450" loading="lazy"
+                        src="https://images.unsplash.com/photo-1523848309072-c199db53f137?auto=format&amp;fit=crop&amp;w=600&amp;h=450&amp;q=72"
+                        width="600" />
+                    <div class="project__body">
+                        <span class="project__cat">Civil engineering</span>
+                        <h3 class="project__title">Site platform formation</h3>
+                    </div>
+                </a>
+                <a class="project project--wide" href="portfolio.html">
+                    <img alt="Heavy truck travelling along a wet newly surfaced road between construction barriers"
+                        decoding="async" height="450" loading="lazy"
+                        src="https://images.unsplash.com/photo-1706712637075-f47fb47548f2?auto=format&amp;fit=crop&amp;w=1100&amp;h=450&amp;q=72"
+                        width="1100" />
+                    <div class="project__body">
+                        <span class="project__cat">Road construction</span>
+                        <h3 class="project__title">Estate access road and haul route</h3>
+                        <span class="project__go">View project <svg aria-hidden="true" class="icon">
+                                <use href="#i-arrow-right"></use>
+                            </svg></span>
+                    </div>
+                </a>
+                <a class="project" href="portfolio.html">
+                    <img alt="Crane standing in front of a large building facade in monochrome light" decoding="async"
+                        height="450" loading="lazy"
+                        src="https://images.unsplash.com/photo-1591955506264-3f5a6834570a?auto=format&amp;fit=crop&amp;w=600&amp;h=450&amp;q=72"
+                        width="600" />
+                    <div class="project__body">
+                        <span class="project__cat">Structural works</span>
+                        <h3 class="project__title">Frame and core package</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- ====================================================================== -->
+    <!-- CAPABILITIES MOSAIC                                                    -->
+    <!-- ====================================================================== -->
+    <section aria-labelledby="mosaic-heading" class="section section--dark">
+        <div class="wrap">
+            <div class="section-head reveal">
+                <p class="eyebrow eyebrow--light">Capabilities</p>
+                <h2 id="mosaic-heading">Everything a site needs, without leaving the contract.</h2>
+                <p>Hover or tap any panel to see the discipline it covers.</p>
+            </div>
+            <div class="mosaic reveal">
+                <a class="mosaic__tile mosaic__tile--w2 mosaic__tile--h2" href="services.html#building">
+                    <img alt="Several cranes rising above a cluster of buildings under construction in a city"
+                        decoding="async" height="800" loading="lazy"
+                        src="https://images.unsplash.com/photo-1485083269755-a7b559a4fe5e?auto=format&amp;fit=crop&amp;w=800&amp;h=800&amp;q=70"
+                        width="800" />
+                    <span class="mosaic__label">Building<svg aria-hidden="true" class="icon">
+                            <use href="#i-arrow-right"></use>
+                        </svg></span>
+                </a>
+                <a class="mosaic__tile mosaic__tile--w2" href="services.html#excavation">
+                    <img alt="Excavator digging into loose sand at the edge of a prepared platform" decoding="async"
+                        height="420" loading="lazy"
+                        src="https://images.unsplash.com/photo-1583024011792-b165975b52f5?auto=format&amp;fit=crop&amp;w=800&amp;h=420&amp;q=70"
+                        width="800" />
+                    <span class="mosaic__label">Excavation<svg aria-hidden="true" class="icon">
+                            <use href="#i-arrow-right"></use>
+                        </svg></span>
+                </a>
+                <a class="mosaic__tile" href="services.html#roads">
+                    <img alt="Road worker in an orange jacket standing beside a yellow works truck" decoding="async"
+                        height="420" loading="lazy"
+                        src="https://images.unsplash.com/photo-1593436878048-92622a77d315?auto=format&amp;fit=crop&amp;w=420&amp;h=420&amp;q=70"
+                        width="420" />
+                    <span class="mosaic__label">Roadworks<svg aria-hidden="true" class="icon">
+                            <use href="#i-arrow-right"></use>
+                        </svg></span>
+                </a>
+                <a class="mosaic__tile" href="services.html#civil">
+                    <img alt="Bulldozer pushing material across a bare earth working area" decoding="async" height="420"
+                        loading="lazy"
+                        src="https://images.unsplash.com/photo-1652303713917-2666b8bee507?auto=format&amp;fit=crop&amp;w=420&amp;h=420&amp;q=70"
+                        width="420" />
+                    <span class="mosaic__label">Earthworks<svg aria-hidden="true" class="icon">
+                            <use href="#i-arrow-right"></use>
+                        </svg></span>
+                </a>
+                <a class="mosaic__tile" href="services.html#surveying">
+                    <img alt="Two site staff checking works from the shoulder of a road under construction"
+                        decoding="async" height="420" loading="lazy"
+                        src="https://images.unsplash.com/photo-1708117390188-d1547de962be?auto=format&amp;fit=crop&amp;w=420&amp;h=420&amp;q=70"
+                        width="420" />
+                    <span class="mosaic__label">Surveying<svg aria-hidden="true" class="icon">
+                            <use href="#i-arrow-right"></use>
+                        </svg></span>
+                </a>
+                <a class="mosaic__tile" href="services.html#excavation">
+                    <img alt="Orange and white excavator standing on freshly turned ground" decoding="async"
+                        height="420" loading="lazy"
+                        src="https://images.unsplash.com/photo-1630288214173-a119cf823388?auto=format&amp;fit=crop&amp;w=420&amp;h=420&amp;q=70"
+                        width="420" />
+                    <span class="mosaic__label">Site prep<svg aria-hidden="true" class="icon">
+                            <use href="#i-arrow-right"></use>
+                        </svg></span>
+                </a>
+                <a class="mosaic__tile mosaic__tile--w2" href="services.html#drainage">
+                    <img alt="Worker carrying out utility works in an opened section of street" decoding="async"
+                        height="420" loading="lazy"
+                        src="https://images.unsplash.com/photo-1529792083865-d23889753466?auto=format&amp;fit=crop&amp;w=800&amp;h=420&amp;q=70"
+                        width="800" />
+                    <span class="mosaic__label">Drainage &amp; utilities<svg aria-hidden="true" class="icon">
+                            <use href="#i-arrow-right"></use>
+                        </svg></span>
+                </a>
+                <a class="mosaic__tile" href="about.html#safety">
+                    <img alt="Red safety helmet resting on a paved surface at a work area" decoding="async" height="420"
+                        loading="lazy"
+                        src="https://images.unsplash.com/photo-1567954970774-58d6aa6c50dc?auto=format&amp;fit=crop&amp;w=420&amp;h=420&amp;q=70"
+                        width="420" />
+                    <span class="mosaic__label">Safety<svg aria-hidden="true" class="icon">
+                            <use href="#i-arrow-right"></use>
+                        </svg></span>
+                </a>
+                <a class="mosaic__tile" href="services.html#excavation">
+                    <img alt="Tracked heavy equipment positioned on broken rock at a working face" decoding="async"
+                        height="420" loading="lazy"
+                        src="https://images.unsplash.com/photo-1580901368855-059c4792ff22?auto=format&amp;fit=crop&amp;w=420&amp;h=420&amp;q=70"
+                        width="420" />
+                    <span class="mosaic__label">Plant<svg aria-hidden="true" class="icon">
+                            <use href="#i-arrow-right"></use>
+                        </svg></span>
+                </a>
+                <a class="mosaic__tile mosaic__tile--w2" href="services.html#roads">
+                    <img alt="Construction vehicle moving along a graded dirt haul road" decoding="async" height="420"
+                        loading="lazy"
+                        src="https://images.unsplash.com/photo-1649034872337-feaa751786ae?auto=format&amp;fit=crop&amp;w=800&amp;h=420&amp;q=70"
+                        width="800" />
+                    <span class="mosaic__label">Haulage<svg aria-hidden="true" class="icon">
+                            <use href="#i-arrow-right"></use>
+                        </svg></span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- ====================================================================== -->
+    <!-- PROJECT FIGURES                                                        -->
+    <!-- ====================================================================== -->
+    <section aria-labelledby="figures-heading" class="section section--tight">
+        <div class="wrap">
+            <div class="section-head reveal">
+                <p class="eyebrow">By the numbers</p>
+                <h2 id="figures-heading">Where the work has gone.</h2>
+            </div>
+            <div class="figures reveal">
+                <div class="figure"><b data-count="1200000" data-suffix=" m³">1,200,000 m³</b><span>Material moved
+                        on earthworks packages</span></div>
+                <div class="figure"><b data-count="86" data-suffix=" km">86 km</b><span>Roads, access tracks and
+                        haul routes formed</span></div>
+                <div class="figure"><b data-count="340000" data-suffix=" m²">340,000 m²</b><span>Cabro, paving and
+                        hardstanding laid</span></div>
+                <div class="figure"><b data-count="96" data-suffix="%">96%</b><span>Projects handed over within the
+                        agreed programme</span></div>
+            </div>
+            <p class="mt-5 text-muted">Figures are illustrative for this demonstration build.</p>
+        </div>
+    </section>
+    <!-- ====================================================================== -->
+    <!-- COMPANY STORY                                                          -->
+    <!-- ====================================================================== -->
+    <section aria-labelledby="story-heading" class="section section--dark">
+        <div class="wrap">
+            <div class="story__grid">
+                <div class="reveal">
+                    <p class="eyebrow eyebrow--light">Our story</p>
+                    <h2 id="story-heading">Started with one excavator. Kept the same standard.</h2>
+                    <p class="lede mt-5">SKK Consultants began as a small earthworks outfit taking on site clearance
+                        nobody else wanted. The plant fleet grew, then the engineering team, then the building
+                        division — but the way we work on site has not changed. Turn up prepared, set out
+                        accurately, and leave the ground better than we found it.</p>
+                    <a class="btn btn--light mt-6" href="about.html">Read the full story</a>
+                </div>
+                <div class="reveal">
+                    <div class="frame frame--wide">
+                        <img alt="Excavator working a rock face on an active quarrying and earthworks operation"
+                            decoding="async" height="620" loading="lazy"
+                            src="https://images.unsplash.com/photo-1580901368919-7738efb0f87e?auto=format&amp;fit=crop&amp;w=1100&amp;h=620&amp;q=72"
+                            width="1100" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====================================================================== -->
+    <!-- TESTIMONIALS                                                           -->
+    <!-- ====================================================================== -->
+    <section aria-labelledby="testimonials-heading" class="section section--sunken">
+        <div class="wrap">
+            <div class="section-head reveal">
+                <p class="eyebrow">Client feedback</p>
+                <h2 id="testimonials-heading">What clients say once the site is handed back.</h2>
+            </div>
+            <div class="testimonials reveal">
+                <div class="testimonials__media">
+                    <img alt="Heavy plant standing on a completed earthworks platform at the end of a working day"
+                        decoding="async" height="1000" loading="lazy"
+                        src="https://images.unsplash.com/photo-1629807473015-41699c4471b5?auto=format&amp;fit=crop&amp;w=700&amp;h=1000&amp;q=72"
+                        width="700" />
+                    <div class="testimonials__quote">
+                        <p>They gave us one number to call and one programme to trust.</p>
+                        <span>Recurring theme in client debriefs</span>
+                    </div>
+                </div>
+                <div class="testimonial-grid">
+                    <figure class="testimonial">
+                        <p aria-label="Rated 5 out of 5" class="rating">
+                            <svg aria-hidden="true" class="icon">
+                                <use href="#i-star"></use>
+                            </svg><svg aria-hidden="true" class="icon">
+                                <use href="#i-star"></use>
+                            </svg><svg aria-hidden="true" class="icon">
+                                <use href="#i-star"></use>
+                            </svg><svg aria-hidden="true" class="icon">
+                                <use href="#i-star"></use>
+                            </svg><svg aria-hidden="true" class="icon">
+                                <use href="#i-star"></use>
+                            </svg>
+                        </p>
+                        <blockquote>The ground conditions were worse than the original report suggested. SKK
+                            re-sequenced the earthworks in two days and still hit the slab date. That flexibility
+                            saved the whole programme.</blockquote>
+                        <figcaption>
+                            <span aria-hidden="true" class="testimonial__avatar">JM</span>
+                            <span class="testimonial__who"><b>Joseph Mwangi</b><span>Development manager,
+                                    residential scheme</span></span>
+                        </figcaption>
+                    </figure>
+                    <figure class="testimonial">
+                        <p aria-label="Rated 5 out of 5" class="rating">
+                            <svg aria-hidden="true" class="icon">
+                                <use href="#i-star"></use>
+                            </svg><svg aria-hidden="true" class="icon">
+                                <use href="#i-star"></use>
+                            </svg><svg aria-hidden="true" class="icon">
+                                <use href="#i-star"></use>
+                            </svg><svg aria-hidden="true" class="icon">
+                                <use href="#i-star"></use>
+                            </svg><svg aria-hidden="true" class="icon">
+                                <use href="#i-star"></use>
+                            </svg>
+                        </p>
+                        <blockquote>We used them first for the survey and setting out, then kept extending the
+                            scope. By the end they were running the drainage and the roads too. Never had to chase a
+                            coordination issue.</blockquote>
+                        <figcaption>
+                            <span aria-hidden="true" class="testimonial__avatar">AK</span>
+                            <span class="testimonial__who"><b>Amina Kariuki</b><span>Project lead, commercial
+                                    park</span></span>
+                        </figcaption>
+                    </figure>
+                    <figure class="testimonial">
+                        <p aria-label="Rated 4 out of 5" class="rating">
+                            <svg aria-hidden="true" class="icon">
+                                <use href="#i-star"></use>
+                            </svg><svg aria-hidden="true" class="icon">
+                                <use href="#i-star"></use>
+                            </svg><svg aria-hidden="true" class="icon">
+                                <use href="#i-star"></use>
+                            </svg><svg aria-hidden="true" class="icon">
+                                <use href="#i-star"></use>
+                            </svg>
+                        </p>
+                        <blockquote>Their cabro finish is the tidiest we have had on any of our yards. Levels are
+                            right, the falls work, and two rainy seasons later there is no settlement at the edges.
+                        </blockquote>
+                        <figcaption>
+                            <span aria-hidden="true" class="testimonial__avatar">DO</span>
+                            <span class="testimonial__who"><b>Daniel Ochieng</b><span>Facilities manager, logistics
+                                    depot</span></span>
+                        </figcaption>
+                    </figure>
+                    <figure class="testimonial">
+                        <p aria-label="Rated 5 out of 5" class="rating">
+                            <svg aria-hidden="true" class="icon">
+                                <use href="#i-star"></use>
+                            </svg><svg aria-hidden="true" class="icon">
+                                <use href="#i-star"></use>
+                            </svg><svg aria-hidden="true" class="icon">
+                                <use href="#i-star"></use>
+                            </svg><svg aria-hidden="true" class="icon">
+                                <use href="#i-star"></use>
+                            </svg><svg aria-hidden="true" class="icon">
+                                <use href="#i-star"></use>
+                            </svg>
+                        </p>
+                        <blockquote>Weekly progress reports arrived every Friday without fail, with photographs and
+                            the actual quantities. As a client that is worth more than a discount.</blockquote>
+                        <figcaption>
+                            <span aria-hidden="true" class="testimonial__avatar">PN</span>
+                            <span class="testimonial__who"><b>Priya Nair</b><span>Investor representative, mixed-use
+                                    project</span></span>
+                        </figcaption>
+                    </figure>
+                    <figure class="testimonial">
+                        <p aria-label="Rated 5 out of 5" class="rating">
+                            <svg aria-hidden="true" class="icon">
+                                <use href="#i-star"></use>
+                            </svg><svg aria-hidden="true" class="icon">
+                                <use href="#i-star"></use>
+                            </svg><svg aria-hidden="true" class="icon">
+                                <use href="#i-star"></use>
+                            </svg><svg aria-hidden="true" class="icon">
+                                <use href="#i-star"></use>
+                            </svg><svg aria-hidden="true" class="icon">
+                                <use href="#i-star"></use>
+                            </svg>
+                        </p>
+                        <blockquote>The soil investigation flagged a soft layer our consultant had missed.
+                            Redesigning the footings cost us three weeks; ignoring it would have cost us the
+                            building.</blockquote>
+                        <figcaption>
+                            <span aria-hidden="true" class="testimonial__avatar">SB</span>
+                            <span class="testimonial__who"><b>Samuel Baraka</b><span>Owner, light industrial
+                                    unit</span></span>
+                        </figcaption>
+                    </figure>
+                    <figure class="testimonial">
+                        <p aria-label="Rated 4 out of 5" class="rating">
+                            <svg aria-hidden="true" class="icon">
+                                <use href="#i-star"></use>
+                            </svg><svg aria-hidden="true" class="icon">
+                                <use href="#i-star"></use>
+                            </svg><svg aria-hidden="true" class="icon">
+                                <use href="#i-star"></use>
+                            </svg><svg aria-hidden="true" class="icon">
+                                <use href="#i-star"></use>
+                            </svg>
+                        </p>
+                        <blockquote>Site was kept clean and the neighbours were kept informed. On a residential
+                            street that matters as much as the concrete does.</blockquote>
+                        <figcaption>
+                            <span aria-hidden="true" class="testimonial__avatar">GW</span>
+                            <span class="testimonial__who"><b>Grace Wanjiru</b><span>Client, private
+                                    residence</span></span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====================================================================== -->
+    <!-- PARTNERS                                                               -->
+    <!-- ====================================================================== -->
+    <section aria-labelledby="partners-heading" class="section section--tight">
+        <div class="wrap">
+            <div class="section-head section-head--center reveal">
+                <p class="eyebrow eyebrow--center">Supply chain</p>
+                <h2 id="partners-heading">Who we build with.</h2>
+                <p>Placeholder marks standing in for the suppliers, consultants and partners SKK works alongside.
+                </p>
+            </div>
+            <div class="partners reveal">
+                <div class="partner"><span class="partner__mark">RIFT<em>STONE</em></span><span
+                        class="partner__kind">Aggregates</span></div>
+                <div class="partner"><span class="partner__mark">MERIDIAN<em>CEM</em></span><span
+                        class="partner__kind">Cement</span></div>
+                <div class="partner"><span class="partner__mark">AXLE<em>PLANT</em></span><span
+                        class="partner__kind">Equipment hire</span></div>
+                <div class="partner"><span class="partner__mark">KESTREL<em>STEEL</em></span><span
+                        class="partner__kind">Reinforcement</span></div>
+                <div class="partner"><span class="partner__mark">ATRIA<em>ARCH</em></span><span
+                        class="partner__kind">Architecture</span></div>
+                <div class="partner"><span class="partner__mark">GEO<em>PROBE</em></span><span
+                        class="partner__kind">Geotechnical</span></div>
+                <div class="partner"><span class="partner__mark">NORTHBANK<em>DEV</em></span><span
+                        class="partner__kind">Developers</span></div>
+                <div class="partner"><span class="partner__mark">VIA<em>LINE</em></span><span
+                        class="partner__kind">Infrastructure</span></div>
+            </div>
+        </div>
+    </section>
+    <!-- ====================================================================== -->
+    <!-- FINAL CTA                                                              -->
+    <!-- ====================================================================== -->
+    <section class="cta-band">
+        <img alt="Excavator standing on a cleared site at the start of a new construction project" class="cta-band__img"
+            decoding="async" height="800" loading="lazy"
+            src="https://images.unsplash.com/photo-1649807533255-bbc9c9fb7d77?auto=format&amp;fit=crop&amp;w=1800&amp;h=800&amp;q=70"
+            width="1800" />
+        <div class="wrap">
+            <div class="cta-band__inner">
+                <div>
+                    <h2>Have a project in mind?</h2>
+                    <p>Send us the drawings, the site address or just a rough idea. We will tell you what it takes
+                        to build it.</p>
+                </div>
+                <div class="cta-band__actions">
+                    <a class="btn btn--primary" href="contact.html">Request a quote</a>
+                    <a class="btn btn--light" href="tel:+254700000000">Call +254 700 000 000</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}
