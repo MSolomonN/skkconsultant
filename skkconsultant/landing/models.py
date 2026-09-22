@@ -10,3 +10,11 @@ class Review(models.Model):
 
     class Meta:
         ordering = ('-created_at',)
+
+    def __str__(self):
+        return self.name
+
+    @property
+    def initials(self):
+        letters = [word[0].upper() for word in self.name.split() if word][:2]
+        return ''.join(letters) or '?'

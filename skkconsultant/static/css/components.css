@@ -668,6 +668,8 @@
 
 .rating { display: flex; gap: 2px; margin-bottom: var(--sp-3); color: var(--c-brand); }
 .rating .icon { width: 15px; height: 15px; fill: currentColor; stroke: none; }
+.rating__star--empty { color: var(--c-rule); }
+.section--dark .rating__star--empty { color: rgba(232, 230, 227, 0.3); }
 
 .testimonial blockquote {
   font-size: 0.9375rem;

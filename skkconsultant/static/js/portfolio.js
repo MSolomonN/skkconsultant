@@ -9,44 +9,13 @@
   var $$ = window.SKK.$$;
 
   var gallery = $('[data-gallery]');
-
-  /* ==========================================================================
-     1. FILTERING
-     ========================================================================== */
-  var buttons = $$('[data-filter]');
-  var countEl = $('[data-visible-count]');
-  var emptyEl = $('[data-gallery-empty]');
   var shots = gallery ? $$('.shot', gallery) : [];
 
   function visibleShots() {
     return shots.filter(function (s) { return !s.hidden; });
   }
 
-  function applyFilter(cat) {
-    shots.forEach(function (shot) {
-      var cats = (shot.getAttribute('data-cat') || '').split(/\s+/);
-      shot.hidden = !(cat === 'all' || cats.indexOf(cat) !== -1);
-    });
-
-    buttons.forEach(function (btn) {
-      btn.setAttribute('aria-pressed', btn.getAttribute('data-filter') === cat ? 'true' : 'false');
-    });
-
-    var shown = visibleShots().length;
-    if (countEl) {
-      countEl.textContent = shown + (shown === 1 ? ' project' : ' projects');
-    }
-    if (emptyEl) { emptyEl.hidden = shown > 0; }
-  }
-
-  if (buttons.length && shots.length) {
-    buttons.forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        applyFilter(btn.getAttribute('data-filter'));
-      });
-    });
-    applyFilter('all');
-  }
+  /* Filtering is handled server-side via category links (see landing/views.py). */
 
   /* ==========================================================================
      2. LIGHTBOX

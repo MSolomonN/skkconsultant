@@ -744,138 +744,22 @@ Construction, Civil Engineering &amp; Property Development
                     </div>
                 </div>
                 <div class="testimonial-grid">
+                    {% for review in reviews %}
                     <figure class="testimonial">
-                        <p aria-label="Rated 5 out of 5" class="rating">
-                            <svg aria-hidden="true" class="icon">
-                                <use href="#i-star"></use>
-                            </svg><svg aria-hidden="true" class="icon">
-                                <use href="#i-star"></use>
-                            </svg><svg aria-hidden="true" class="icon">
-                                <use href="#i-star"></use>
-                            </svg><svg aria-hidden="true" class="icon">
-                                <use href="#i-star"></use>
-                            </svg><svg aria-hidden="true" class="icon">
+                        <p aria-label="Rated {{ review.rating }} out of 5" class="rating">
+                            {% for star in "12345" %}
+                            <svg aria-hidden="true" class="icon rating__star{% if forloop.counter > review.rating %} rating__star--empty{% endif %}">
                                 <use href="#i-star"></use>
                             </svg>
+                            {% endfor %}
                         </p>
-                        <blockquote>The ground conditions were worse than the original report suggested. SKK
-                            re-sequenced the earthworks in two days and still hit the slab date. That flexibility
-                            saved the whole programme.</blockquote>
+                        <blockquote>{{ review.description }}</blockquote>
                         <figcaption>
-                            <span aria-hidden="true" class="testimonial__avatar">JM</span>
-                            <span class="testimonial__who"><b>Joseph Mwangi</b><span>Development manager,
-                                    residential scheme</span></span>
+                            <span aria-hidden="true" class="testimonial__avatar">{{ review.initials }}</span>
+                            <span class="testimonial__who"><b>{{ review.name }}</b></span>
                         </figcaption>
                     </figure>
-                    <figure class="testimonial">
-                        <p aria-label="Rated 5 out of 5" class="rating">
-                            <svg aria-hidden="true" class="icon">
-                                <use href="#i-star"></use>
-                            </svg><svg aria-hidden="true" class="icon">
-                                <use href="#i-star"></use>
-                            </svg><svg aria-hidden="true" class="icon">
-                                <use href="#i-star"></use>
-                            </svg><svg aria-hidden="true" class="icon">
-                                <use href="#i-star"></use>
-                            </svg><svg aria-hidden="true" class="icon">
-                                <use href="#i-star"></use>
-                            </svg>
-                        </p>
-                        <blockquote>We used them first for the survey and setting out, then kept extending the
-                            scope. By the end they were running the drainage and the roads too. Never had to chase a
-                            coordination issue.</blockquote>
-                        <figcaption>
-                            <span aria-hidden="true" class="testimonial__avatar">AK</span>
-                            <span class="testimonial__who"><b>Amina Kariuki</b><span>Project lead, commercial
-                                    park</span></span>
-                        </figcaption>
-                    </figure>
-                    <figure class="testimonial">
-                        <p aria-label="Rated 4 out of 5" class="rating">
-                            <svg aria-hidden="true" class="icon">
-                                <use href="#i-star"></use>
-                            </svg><svg aria-hidden="true" class="icon">
-                                <use href="#i-star"></use>
-                            </svg><svg aria-hidden="true" class="icon">
-                                <use href="#i-star"></use>
-                            </svg><svg aria-hidden="true" class="icon">
-                                <use href="#i-star"></use>
-                            </svg>
-                        </p>
-                        <blockquote>Their cabro finish is the tidiest we have had on any of our yards. Levels are
-                            right, the falls work, and two rainy seasons later there is no settlement at the edges.
-                        </blockquote>
-                        <figcaption>
-                            <span aria-hidden="true" class="testimonial__avatar">DO</span>
-                            <span class="testimonial__who"><b>Daniel Ochieng</b><span>Facilities manager, logistics
-                                    depot</span></span>
-                        </figcaption>
-                    </figure>
-                    <figure class="testimonial">
-                        <p aria-label="Rated 5 out of 5" class="rating">
-                            <svg aria-hidden="true" class="icon">
-                                <use href="#i-star"></use>
-                            </svg><svg aria-hidden="true" class="icon">
-                                <use href="#i-star"></use>
-                            </svg><svg aria-hidden="true" class="icon">
-                                <use href="#i-star"></use>
-                            </svg><svg aria-hidden="true" class="icon">
-                                <use href="#i-star"></use>
-                            </svg><svg aria-hidden="true" class="icon">
-                                <use href="#i-star"></use>
-                            </svg>
-                        </p>
-                        <blockquote>Weekly progress reports arrived every Friday without fail, with photographs and
-                            the actual quantities. As a client that is worth more than a discount.</blockquote>
-                        <figcaption>
-                            <span aria-hidden="true" class="testimonial__avatar">PN</span>
-                            <span class="testimonial__who"><b>Priya Nair</b><span>Investor representative, mixed-use
-                                    project</span></span>
-                        </figcaption>
-                    </figure>
-                    <figure class="testimonial">
-                        <p aria-label="Rated 5 out of 5" class="rating">
-                            <svg aria-hidden="true" class="icon">
-                                <use href="#i-star"></use>
-                            </svg><svg aria-hidden="true" class="icon">
-                                <use href="#i-star"></use>
-                            </svg><svg aria-hidden="true" class="icon">
-                                <use href="#i-star"></use>
-                            </svg><svg aria-hidden="true" class="icon">
-                                <use href="#i-star"></use>
-                            </svg><svg aria-hidden="true" class="icon">
-                                <use href="#i-star"></use>
-                            </svg>
-                        </p>
-                        <blockquote>The soil investigation flagged a soft layer our consultant had missed.
-                            Redesigning the footings cost us three weeks; ignoring it would have cost us the
-                            building.</blockquote>
-                        <figcaption>
-                            <span aria-hidden="true" class="testimonial__avatar">SB</span>
-                            <span class="testimonial__who"><b>Samuel Baraka</b><span>Owner, light industrial
-                                    unit</span></span>
-                        </figcaption>
-                    </figure>
-                    <figure class="testimonial">
-                        <p aria-label="Rated 4 out of 5" class="rating">
-                            <svg aria-hidden="true" class="icon">
-                                <use href="#i-star"></use>
-                            </svg><svg aria-hidden="true" class="icon">
-                                <use href="#i-star"></use>
-                            </svg><svg aria-hidden="true" class="icon">
-                                <use href="#i-star"></use>
-                            </svg><svg aria-hidden="true" class="icon">
-                                <use href="#i-star"></use>
-                            </svg>
-                        </p>
-                        <blockquote>Site was kept clean and the neighbours were kept informed. On a residential
-                            street that matters as much as the concrete does.</blockquote>
-                        <figcaption>
-                            <span aria-hidden="true" class="testimonial__avatar">GW</span>
-                            <span class="testimonial__who"><b>Grace Wanjiru</b><span>Client, private
-                                    residence</span></span>
-                        </figcaption>
-                    </figure>
+                    {% endfor %}
                 </div>
             </div>
         </div>

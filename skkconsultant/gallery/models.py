@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils.text import slugify
 
 class Category(models.Model):
     name = models.CharField(max_length=100, unique=True)
@@ -12,6 +13,10 @@ class Category(models.Model):
 
     def __str__(self):
         return self.name
+
+    @property
+    def slug(self):
+        return slugify(self.name)
     
 class Image(models.Model):
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
